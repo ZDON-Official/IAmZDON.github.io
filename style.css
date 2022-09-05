@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 div{
-    border: 1px solid gold;
+    /* border: 1px solid gold; */
 }
 body{
-    background-color: #121212;
+    background-color: #211B2B;
     color: white;
     font-family: 'Roboto', serif;
 }
@@ -14,7 +14,7 @@ body{
     margin: 0 20%;
     padding: 10px;
     gap: 10px;
-    padding-top: 100px;
+    padding-top: 50px;
     /* align-items: center; */
     justify-content: center;
 }
@@ -28,17 +28,34 @@ body{
     margin: 0px;
     padding: 0px 5px;
 }
+
+.Header_sec h4{
+    opacity: 85%;
+}
+
 .Header_sec h1{
     color: #ffc700;
     font-size: 48px;
 }
+.Header_sec{
+    margin-bottom: 5px;
+}
 
 .main_bio{
     background-color: #da8558;
+    /* box-shadow: #121212; */
     color: #121212;
-    padding: 0px 10px;
     font-size: 16px;
     border-radius: 8px;
+    padding: 2px;
+    box-shadow: -6px 6px 3px #121212;
+    
+}
+
+.main_bio p{
+    /* padding: 2px 2px; */
+    /* border: 2px solid black; */
+    margin: 4px 4px;
 }
 
 /* for the image */
@@ -46,6 +63,12 @@ body{
     width: 300px;
     height: 400px;
     background-color: white;
+    border-radius: 8px;
+}
+
+.image_side img{
+    width: 100%;
+    border-radius: 8px;
 }
 
 /* for the links */
@@ -53,7 +76,11 @@ body{
     display: flex;
     justify-content: center;
     color: #ffc700;
+    /* padding: 5px 0; */
+    margin-top: 5px;
 }
+
 a{
+    color: inherit;
     text-decoration: none;
 }
