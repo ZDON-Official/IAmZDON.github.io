@@ -1,2 +1,2 @@
 # Personal website
-## *Currently in development*
+## \*Currently in development\*
