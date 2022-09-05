@@ -48,6 +48,7 @@ body{
     padding-top: 0px;
     margin-top: 0;
     margin-bottom: 5px;
+    min-width: 300px;
 }
 
 .main_bio{
@@ -58,6 +59,8 @@ body{
     border-radius: 8px;
     padding: 2px;
     box-shadow: -6px 6px 3px #121212;
+    max-height: 200px;
+    min-width: 250px;
 }
 
 .main_bio p{
@@ -67,12 +70,12 @@ body{
 }
 
 /* for the image */
-.rect{
+/* .rect{
     width: 300px;
     height: 400px;
     background-color: white;
     border-radius: 8px;
-}
+} */
 
 .image_side img{
     width: 100%;
