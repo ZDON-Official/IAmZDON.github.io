@@ -6,9 +6,27 @@ div{
 
 body{
     /* background-color: #211B2B; */
-    background-color: #121212;
     color: white;
     font-family: 'Roboto', serif;
+    /* background-color: #e5e5f7; */
+
+    /* opacity: 0.9; */
+    /* background-image: radial-gradient(#121212 0.5px, transparent 0.5px); */
+    /* background-image: radial-gradient(#ffc700 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px; */
+
+    background-color: #ffc700;
+    opacity: 1;
+    /* background-image: radial-gradient(#121212 0.55px, transparent 0.55px), radial-gradient(#121212 0.55px, #ffc700 0.55px); */
+    background-image: radial-gradient(#ffc700 0.55px, transparent 0.55px), radial-gradient(#ffc700 0.55px, #121212 0.55px);
+    background-size: 22px 22px;
+    background-position: 0 0, 11px 11px;
+
+
+
+    /* background-color: #ffc700; */
+    background-color: #121212;
 }
 
 #container{
@@ -37,8 +55,10 @@ body{
     opacity: 85%;
 }
 
+/*! this is the main header h1 */
 .Header_sec h1{
     color: #ffc700;
+    /* color: #121212; */
     font-size: 48px;
     padding-top: 0px;
     margin-top: 0px;
@@ -57,9 +77,9 @@ body{
     font-size: 16px;
     border-radius: 8px;
     padding: 2px;
-    box-shadow: -6px 6px 3px #121212;
     max-height: 200px;
     min-width: 250px;
+    /* box-shadow: -6px 6px 3px rgb(58, 58, 58); */
 }
 
 .main_bio p{
@@ -75,6 +95,7 @@ body{
     min-width: 200px;
     max-width: 100%;
     object-fit: cover;
+    /* box-shadow: -10px 10px 5px rgb(58, 58, 58); */
 }
 
 /*! for the links */
