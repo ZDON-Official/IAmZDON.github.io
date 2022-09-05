@@ -44,6 +44,8 @@ body{
 
 .Header_sec h1{
     color: #ffc700;
+    font: 48px;
+    font-weight: bold;
 }
 
 .Header_sec .col{
@@ -56,6 +58,7 @@ body{
     opacity: 90%;
     /* color: #D43D49; */
     color: #EC3546;
+    font: 16px;
 }
 
 .Header_sec{
@@ -91,6 +94,9 @@ body{
 
 .main_bio p{
     margin: 2px 2px;
+    padding: 2px 2px;
+    font: 14px;
+    font-weight: lighter;
 }
 
 
