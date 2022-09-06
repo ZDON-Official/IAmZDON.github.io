@@ -9,11 +9,12 @@ body{
     font-family: 'Roboto', serif;
 
     /* background-color: #ffc700; */
+    /* background-color: #1A1B25 */
+    background-color: #1A1B25;
     opacity: 1;
-    /* background-image: radial-gradient(darkgray 0.55px, transparent 0.55px), radial-gradient(darkgray 0.55px, #352F3B 0.55px); */
-    background-size: 22px 22px;
-    background-position: 0 0, 11px 11px;
-    background-color: #1A1B25
+    background-image: radial-gradient(#33364e 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#33364e 0.7000000000000001px, #1A1B25 0.7000000000000001px);
+    background-size: 28px 28px;
+    background-position: 0 0, 14px 14px;
 }
 
 #container{
