@@ -124,8 +124,19 @@ body{
     font-size: 14px;
     /* font-weight: lighter; */
 }
+
 a{
     color: #ffc700;
     text-decoration: none;
     padding: 0 5px;
+}
+
+a:hover{
+    /* opacity: 85%; */
+    text-decoration: underline;
+    color: white;
+}
+
+a:visited{
+    color: #6A4086;
 }
