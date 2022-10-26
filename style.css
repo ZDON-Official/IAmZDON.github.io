@@ -10,42 +10,32 @@ body{
 
     /* background-color: #ffc700; */
     /* background-color: #1A1B25 */
-    background-color: #1A1B25;
+    /* background-color: #FFD700; */
     opacity: 1;
-    background-image: radial-gradient(#33364e 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#33364e 0.7000000000000001px, #1A1B25 0.7000000000000001px);
+    background-image: radial-gradient(#121212 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#121212 0.7000000000000001px, #FFD700 0.7000000000000001px);
     background-size: 28px 28px;
     background-position: 0 0, 14px 14px;
 }
 
+/* this is the container that contains everything */
 #container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    color: white;
     margin-top: 100px;
-    /* background-color: #3C9183; */
-    /* background-color: #F2F0F1; */
-    background-color: #F3F3F3;
+    background-color: #3D4849; /* slate gray*/
     padding: 10px 5px;
     border-radius: 10px;
     flex-basis: auto;
     min-width: 460px;
     max-width: 460px;
-    /* box-shadow: -15px 15px 10px #181821; */
-    /* box-shadow: 0px 15px 25px #181821; */
     box-shadow: 0px 5px 25px black;
     margin-top: 10%;
 }
 
-/* .rect{
-    width: 250px;
-    height: 250px;
-    background-color: white;
-    border-radius: 8px;
-} */
-
+/* image and the heading */
 .top_side{
     display: flex;
     /* align-items: center; */
@@ -55,10 +45,10 @@ body{
     /* border: 2px solid gold; */
 }
 
+/* heading - my name */
 .Header_sec h1{
-    /* color: #ffc700; */
-    /* color: #FFD700; */
-    color: #D52C48;
+    color: #FFD700;
+    /* color: #D52C48; */
     font: 48px;
     font-weight: bold;
 }
@@ -69,12 +59,11 @@ body{
     padding: 2px;
 }
 
+/* cs at richmond */
 .Header_sec h4{
-    opacity: 85%;
-    /* color: #D43D49; */
-    /* color: #820000; */
-    /* color: #6A4086; */
-    color: #121212;
+    /* opacity: 90%; */
+    color: #ea2434;
+    /* color: white; */
     font: 18px;
     font-weight: bold;
 }
@@ -90,12 +79,8 @@ body{
     max-height: 200px;
     min-width: 200px;
     max-width: 200px;
-    object-fit: cover;
-    /* box-shadow: -5px 5px 3px #347066; */
-    /* box-shadow: -5px 5px 3px #347066; */
-    /* box-shadow: -5px 5px 3px gray; */
+    object-fit: cover; 
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
-    /* box-shadow: 0px 6px 5px gray; */
 }
 
 /*! this is for the main paragraph */
@@ -105,24 +90,14 @@ body{
 }
 
 .main_bio{
-    /* background-color: #da8558; */
-    /* background-color: #6DA4A0; */
-    /* background-color: #ffd700; */
-    /* background-color: #D52C48; */
-    /* background-color: #DF9F6E; */
-    /* background-color: #87888D; */
-    /* background-color: #BAAA7D; */
-    background-color: #938FA1;
-    /* opacity: 95%; */
+    background-color: #FFD700;
+    /* background-color: #938FA1; */
     /* color: #121212; */
     font-size: 16px;
     border-radius: 8px;
     padding: 2px;
     max-height: 200px;
-    /* box-shadow: -5px 5px 3px #347066; */
-    /* box-shadow: -5px 5px 3px gray; */
-    /* box-shadow: 0px 3px 8px #121212; */
-    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
     /* max-width: 400px; */
 }
 
@@ -131,8 +106,8 @@ body{
     padding: 2px 2px;
     font: 14px;
     font-weight: lighter;
-    /* color: white; */
     color: #121212;
+    /* color: #D43D49; */
     /* opacity: 85%; */
 }
 
@@ -145,13 +120,15 @@ body{
     padding-top: 10px;
     margin: 5px 0px;
     /* color: #FFD700; */
-    color: #D52C48;
+    /* color: #D52C48; */
+    color: #FFD700;
     font-size: 14px;
     /* font-weight: lighter; */
 }
 
 a{
-    color: #D52C48;
+    /* color: #D52C48; */
+    color: #FFD700;
     text-decoration: none;
     padding: 0 5px;
 }
@@ -159,9 +136,5 @@ a{
 a:hover{
     /* opacity: 85%; */
     text-decoration: underline;
-    color: #121212;
-}
-
-a:visited{
-    /* color: #6A4086; */
+    color: #ea2434;
 }
