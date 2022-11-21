@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+div {
+    /* border: 2px solid red; */
+}
+
+body{
+    color: white;
+    font-family: 'Roboto', serif;
+
+    /* background-color: #ffc700; */
+    /* background-color: #1A1B25 */
+    /* background-color: #FFD700; */
+    /* opacity: 1;
+    background-image: radial-gradient(#121212 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#121212 0.7000000000000001px, #FFD700 0.7000000000000001px);
+    background-size: 28px 28px;
+    background-position: 0 0, 14px 14px; */
+    padding: 0%;
+    margin: 0%;
+}
+
+/* this is the container that contains everything */
+#container{
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 100px; */
+    /* background-color: #3D4849; slate gray */
+    /* padding: 10px 5px;
+    border-radius: 10px;
+    flex-basis: auto;
+    min-width: 460px;
+    max-width: 460px;
+    box-shadow: 0px 5px 25px black;
+    margin-top: 10%; */
+}
+
+#left_side{
+    background-color: #3D4849;
+    height: 100vh;
+    width: 280px;
+    margin: 0%;
+    /* border-radius:0px 8px 8px 0px; */
+    box-shadow: 0px 5px 20px black;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+#img_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* column-gap: 10px; */
+}
+
+#right_side{
+    opacity: 1;
+    background-image: radial-gradient(#121212 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#121212 0.7000000000000001px, #FFD700 0.7000000000000001px);
+    background-size: 28px 28px;
+    background-position: 0 0, 14px 14px;
+
+    width: 100vw;
+}
+
+
+/* image and the heading */
+.top_side{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 5px;
+    /* border: 2px solid gold; */
+}
+
+/*! KEEP THEESE */
+/* heading - my name */
+.Header_sec h1{
+    color: #FFD700;
+    /* color: #D52C48; */
+    font: 48px;
+    font-weight: bold;
+}
+
+.Header_sec .col{
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 2px;
+}
+
+/* cs at richmond */
+.Header_sec h4{
+    /* opacity: 90%; */
+    color: #ea2434;
+    /* color: white; */
+    font: 18px;
+    font-weight: bold;
+}
+
+.Header_sec{
+    padding: 0 20px;
+}
+
+.rect img{
+    width: 100%;
+    border-radius: 8px;
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    object-fit: cover; 
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
+}
+/*! ------------------------  */
+
+
+
+/*! this is for the main paragraph */
+.text_side{
+    /* border: 2px solid gold; */
+    max-width: 450px;
+}
+
+.main_bio{
+    background-color: #FFD700;
+    /* background-color: #938FA1; */
+    /* color: #121212; */
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 2px;
+    max-height: 200px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
+    /* max-width: 400px; */
+}
+
+.main_bio p{
+    margin: 2px 2px;
+    padding: 2px 2px;
+    font: 14px;
+    font-weight: lighter;
+    color: #121212;
+    /* color: #D43D49; */
+    /* opacity: 85%; */
+}
+
+
+/*! this is for links */
+.Links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin: 5px 0px;
+    /* height: 200px; */
+    /* color: #FFD700; */
+    /* color: #D52C48; */
+    color: #FFD700;
+    font-size: 32px;
+    /* font-weight: lighter; */
+    column-gap: 20px;
+    /* border: 2px solid black; */
+}
+
+.link_btn{
+    /* background-color: white; */
+    margin: 5px;
+}
+
+a{
+    /* color: #D52C48; */
+    color: #FFD700;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+a:hover{
+    /* opacity: 85%; */
+    text-decoration: underline;
+    color: #ea2434;
+}
