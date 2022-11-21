@@ -44,7 +44,8 @@ body{
 }
 
 #left_side{
-    background-color: #3D4849;
+    /* background-color: #3D4849; */
+    background-color: #305256;
     height: 100vh;
     width: 280px;
     margin: 0%;
@@ -58,18 +59,18 @@ body{
     column-gap: 20px;
     justify-content: space-between;
 }
-
+/* 
 #img_header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* column-gap: 10px; */
-}
+} */
 
 #right_side{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
     flex-grow: 1;
     flex-wrap: nowrap;
@@ -77,7 +78,9 @@ body{
 
 
     opacity: 1;
-    background-image: radial-gradient(#121212 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#121212 0.7000000000000001px, #FFD700 0.7000000000000001px);
+    /* background-image: radial-gradient(#121212 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#121212 0.7000000000000001px, #FFD700 0.7000000000000001px); */
+    background-image: radial-gradient(#ea2434 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#ea2434 0.7000000000000001px, #F8F8F9 0.7000000000000001px);
+    /* background-image: radial-gradient(#FFD700 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#FFD700 0.7000000000000001px, #2F5154 0.7000000000000001px); */
     background-size: 28px 28px;
     background-position: 0 0, 14px 14px;
     /* padding: 0px 100px; */
@@ -85,35 +88,64 @@ body{
     /* width: 100%; */
 }
 
+.about_img{
+    width: 100%;
+    border-radius: 8px;
+    min-height: 400px;
+    max-height: 400px;
+    min-width: 400px;
+    max-width: 400px;
+    object-fit: cover; 
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
+}
+
+.page_title{
+    color: #ea2434;
+    font-size: 70px;
+    font-weight: 900;
+
+    /* border: 2px solid red; */
+    margin: 20px;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
+}
+
+
+
+
+
 /*! Main bio on right side */
 .main_bio{
     
     width: 650px;
-    /* height: 650px; */
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     /* height: auto; */
     /* align-items: center; */
 
     /* background-color: #FFD700; */
-    background-color: #3D4849;
+    background-color: #305256;
     /* color: white; */
     /* color: white; */
     /* background-color: #938FA1; */
     /* color: #121212; */
     font-size: 16px;
     border-radius: 8px;
-    padding: 5px;
+    padding: 20px 10px;
     /* max-height: 200px; */
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
     /* max-width: 400px; */
 }
 
 .main_bio p{
-    margin: 2px 2px;
-    padding: 2px 2px;
+    /* margin: 2px 2px;
+    padding: 2px 2px; */
     font-size: 24px;
     /* font-weight: lighter; */
     /* color: white; */
-    /* color: #FFD700; */
+    color: #FFD700;
     opacity: 90%;
     /* color: #D43D49; */
     /* opacity: 85%; */
@@ -130,7 +162,7 @@ body{
     /* border: 2px solid gold; */
 }
 
-/*! KEEP THEESE */
+/*! KEEP THESE */
 /* heading - my name */
 .Header_sec h1{
     color: #FFD700;
@@ -158,16 +190,7 @@ body{
     padding: 0 20px;
 }
 
-.rect img{
-    width: 100%;
-    border-radius: 8px;
-    min-height: 200px;
-    max-height: 200px;
-    min-width: 200px;
-    max-width: 200px;
-    object-fit: cover; 
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
-}
+
 /*! ------------------------  */
 
 
@@ -257,6 +280,7 @@ a:hover{
     /* background-color: white; */
 }
 
+/* TODO <- class: header */
 #prj_header{
     color: #ea2434;
     font-size: 52px;
@@ -264,7 +288,9 @@ a:hover{
 }
 
 .projects{
-    background-color: white;
+    /* background-color: white; */
+    background-color: #305256;
+    color: #FFD700;
     border-radius: 12px;
     padding: 2px 5px;
     /* padding-right: 0px; */
