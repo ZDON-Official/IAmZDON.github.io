@@ -5,6 +5,7 @@ div {
 }
 
 body{
+    background-color: #FFD700;
     color: white;
     font-family: 'Roboto', serif;
 
@@ -21,6 +22,7 @@ body{
 
 /* this is the container that contains everything */
 #container{
+    background-color: #FFD700;
     display: flex;
     /* justify-content: space-between; */
     margin: 0%;
@@ -47,7 +49,7 @@ body{
     width: 280px;
     margin: 0%;
     /* border-radius:0px 8px 8px 0px; */
-    box-shadow: 0px 5px 20px black;
+    /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.75); */
     padding: 50px 0px;
     display: flex;
     flex-direction: column;
@@ -66,12 +68,55 @@ body{
 }
 
 #right_side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+
+
+
     opacity: 1;
     background-image: radial-gradient(#121212 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#121212 0.7000000000000001px, #FFD700 0.7000000000000001px);
     background-size: 28px 28px;
     background-position: 0 0, 14px 14px;
+    /* padding: 0px 100px; */
+    /* margin-left: 280px; */
+    /* width: 100%; */
+}
 
-    width: 100vw;
+/*! Main bio on right side */
+.main_bio{
+    
+    width: 650px;
+    /* height: 650px; */
+    /* height: auto; */
+    /* align-items: center; */
+
+    /* background-color: #FFD700; */
+    background-color: #3D4849;
+    /* color: white; */
+    /* color: white; */
+    /* background-color: #938FA1; */
+    /* color: #121212; */
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 5px;
+    /* max-height: 200px; */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
+    /* max-width: 400px; */
+}
+
+.main_bio p{
+    margin: 2px 2px;
+    padding: 2px 2px;
+    font-size: 24px;
+    /* font-weight: lighter; */
+    /* color: white; */
+    /* color: #FFD700; */
+    opacity: 90%;
+    /* color: #D43D49; */
+    /* opacity: 85%; */
 }
 
 
@@ -105,8 +150,8 @@ body{
     /* opacity: 90%; */
     color: #ea2434;
     /* color: white; */
-    font: 18px;
-    font-weight: bold;
+    font: 20px;
+    font-weight: bolder;
 }
 
 .Header_sec{
@@ -133,27 +178,9 @@ body{
     max-width: 450px;
 }
 
-.main_bio{
-    background-color: #FFD700;
-    /* background-color: #938FA1; */
-    /* color: #121212; */
-    font-size: 16px;
-    border-radius: 8px;
-    padding: 2px;
-    max-height: 200px;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
-    /* max-width: 400px; */
-}
 
-.main_bio p{
-    margin: 2px 2px;
-    padding: 2px 2px;
-    font: 14px;
-    font-weight: lighter;
-    color: #121212;
-    /* color: #D43D49; */
-    /* opacity: 85%; */
-}
+
+
 
 
 /*! this is for links */
@@ -189,5 +216,41 @@ a{
 a:hover{
     /* opacity: 85%; */
     text-decoration: underline;
+    color: #ea2434;
+}
+
+
+.socials{
+    color: #FFD700;    
+}
+
+#hello{
+    /* color: white; */
+}
+
+
+#Cur_page{
+    color: #ea2434;
+}
+
+
+
+/*! All code here is for project page */
+
+#project_con{
+    width: 70vw;
+    height: 90vh;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    
+    background-color: white;
+}
+
+#prj_header{
     color: #ea2434;
 }
