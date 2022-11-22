@@ -11,6 +11,7 @@ body{
     font-family: 'Roboto', serif;
     padding: 0%;
     margin: 0%;
+    overflow: hidden;
 }
 
 /* this is the container that contains everything */
@@ -29,6 +30,7 @@ body{
     background-color: #305256;
     height: 100vh;
     width: 280px;
+    min-width: 250px;
     margin: 0%;
     /* border-radius:0px 8px 8px 0px; */
     /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.75); */
@@ -39,6 +41,7 @@ body{
     box-sizing: border-box;
     column-gap: 20px;
     justify-content: space-between;
+    resize: none;
 }
 
 #right_side{
@@ -111,7 +114,7 @@ body{
 .main_bio p{
     /* margin: 2px 2px;
     padding: 2px 2px; */
-    font-size: 24px;
+    font-size: 20px;
     /* font-weight: lighter; */
     /* color: white; */
     color: #FFD700;
@@ -212,6 +215,7 @@ a:hover{
 
 #project_con{
     width: 65vw;
+    min-width: 400px;
     height: 90vh;
     /* border-radius: 12px; */
     /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.75); */
@@ -228,6 +232,7 @@ a:hover{
 
     /* border: 2px solid red; */
     /* background-color: white; */
+    resize: none;
 }
 
 #prj_carousel{
@@ -329,7 +334,7 @@ a:hover{
     height: 400px;
     width: auto;
     /* background-color: #121212; */
-    border-radius: 8px;
+    border-radius: 5px;
     margin: 10px 5px;
     display: flex;
     justify-content: center;
@@ -349,7 +354,7 @@ a:hover{
     width: auto;
     max-width: 80%;
     height: 100%;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
 }
 
@@ -361,10 +366,80 @@ a:hover{
 /*!------------------------------------------------------------------------------- */
 
 
+#resume_container{
+    background-color: #305256;
+    width: 50vw;
+    height: 85vh;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    color: #FFD700;
+    font-size: 16px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#resume_container::-webkit-scrollbar{
+    width: 5px;
+    
+}
+
+.sec_title{
+    color: #ea2434;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px 0px; 
+    /* padding: 0%; */
+
+}
+
+.sec_top{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: white;
+}
+
+.sec_bottom{
+    width: 700px;
+}
+
+.sec_list {
+    list-style: none;
+}
+
+.sec_list li{
+    font-size: 14px;
+    text-align: left;
+}
+
+.sec_list li::before {
+    content: "\2022";
+    color: #ea2434;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  #resume_container h3{
+    margin: 4px 0px;
+    padding: 0%;
+    color: #FFD700;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .info_title h4{
+    margin: 4px 0px;
+    padding: 0%;
+  }
 
 
-
-
+  hr{
+    /* border: 1px solid #ea2434; */
+    border: 1px solid #FFD700;
+  }
 
 
 /*!------------------------------------------------------------------------------- */
@@ -374,10 +449,15 @@ a:hover{
 /** This is for the GALLERY page */
 /*!------------------------------------------------------------------------------- */
 
+#gallery{
+    resize: none;
+    /* border: 4px solid gold; */
+}
+
 /* code from - https://softauthor.com/javascript-image-slider-slideshow-carousel/ */
 .pic-ctn {
     position: relative;
-    width: 70vw;
+    width: 950px;
     height: 65vh;
     background-color: #305256;
     border-radius: 12px;
