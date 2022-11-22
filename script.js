@@ -23,22 +23,45 @@ buttons.forEach(button => {
     })
 })
 
+var path = window.location.pathname
+// const fs = require('fs');
+// var img = fs.readdirSync('/gallery_assets/')
+console.log(path)
+if(path === '/gallery.html'){
 
-const images = document.querySelectorAll("[data-pic]"); 
-let i = 0;
+    //! this is for loading new images into the div
+    // var fs = require('fs');
+    // var img = fs.readdirSync('/gallery_assets/')
 
-setInterval(function(){ 
+    // const cur_img = document.que('img')
+    // let pic_ctn = document.getElementsByClassName('pic-ctn')
 
-    if(i == 0) {
-      images[i].className = "fade-in-image"
-    } else if(i == images.length ) {
-      images[i - 1].className = "fade-out-image"
-      images[0].className = "fade-in-image"
-      i = 0
-    } else {
-      images[i - 1].className = "fade-out-image"
-      images[i].className = "fade-in-image"
-    }
+    // img.forEach(pic => {
+    //     console.log(`file name ${pic}`)
+    // })
 
-    i++
-}, 2000)
+    
+    
+    //! this for looping through the images
+    const images = document.querySelectorAll("[data-pic]"); 
+    let i = 0;
+    
+    setInterval(function(){ 
+        console.log('in timeout')
+        if(i == 0) {
+            images[i].className = "fade-in-image"
+        } else if(i == images.length ) {
+            images[i - 1].className = "fade-out-image"
+            images[0].className = "fade-in-image"
+            i = 0
+        } else {
+            images[i - 1].className = "fade-out-image"
+            images[i].className = "fade-in-image"
+        }
+        
+        i++
+    }, 2000)
+} else{
+    console.log('clear timeout')
+    clearInterval()
+}

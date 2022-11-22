@@ -388,6 +388,9 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
+.pic[data-active]{
+    opacity: 1;
+}
 
 .pic-ctn img{
     /* display: block; */
@@ -403,7 +406,7 @@ a:hover{
 }
 
 .fade-in-image {
-    animation: fadeIn 3s;
+    animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
@@ -412,7 +415,7 @@ a:hover{
 }
 
 .fade-out-image {
-    animation: fadeOut 4s;
+    animation: fadeOut 2s;
 }
 
 @keyframes fadeOut {
