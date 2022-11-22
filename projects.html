@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zohaib Rana</title>
     <link rel="stylesheet" href="style2.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -43,48 +44,65 @@
         <div id="right_side">
             <div id="project_con">
                 <h1 id="prj_header"class="page_title">Projects</h1>
-                <div id="prj_carousel">
-                    <button class="nav_arrow" id="prj_left_arr">
-                        &#10148;
-                    </button>
+                <section aria-label="current project"> 
+                    <div id="prj_carousel" data-carousel>
+                        <button class="nav_arrow" id="prj_left_arr" data-carousel-button="prev">
+                            &#10148;
+                        </button>
 
 
-                    <div class="projects">
-                        <div class="prj_top">
-                            <h2><a class="prj_links" href="https://github.com/ZDON-Official/Processor-Simulator">Processor Simulator</a> </h2>
-                            <p>
-                                This project is a comnputer simulation which uses logisim to simulate a working processor and other I/O devices
-                                This was implemented by Zohaib and Ying. This is version 1.0.0 of the project.
-                            </p>
-                        </div>
-                        <div class="prj_bottom">
-                            <!-- PLACE HOLDER IMG -->
-                            <img class="prj_img" src="./Assets/Processor.png" alt="">
-                            <!-- <img class="prj_img" src="./Assets/Inner-Control.png" alt=""> -->
-                        </div>
+                        <ul id="prj_list" data-projects>
+                            <li class="projects" data-active>
+                                <div class="prj_top">
+                                    <h2><a class="prj_links" href="https://github.com/ZDON-Official/Processor-Simulator">Processor Simulator</a> </h2>
+                                    <p>
+                                        This project is a comnputer simulation which uses logisim to simulate a working processor and other I/O devices
+                                        This was implemented by Zohaib and Ying. This is version 1.0.0 of the project.
+                                    </p>
+                                </div>
+                                <div class="prj_bottom">
+                                    <!-- PLACE HOLDER IMG -->
+                                    <img class="prj_img" src="./Assets/Processor.png" alt="">
+                                    <!-- <img class="prj_img" src="./Assets/Inner-Control.png" alt=""> -->
+                                </div>
+                            </li>
+                            <li class="projects">
+                                <div class="prj_top">
+                                    <h2><a class="prj_links" href="">Ultimate Tic-Tac-Toe</a> </h2>
+                                    <p>
+                                        This project is a comnputer simulation which uses logisim to simulate a working processor and other I/O devices
+                                        This was implemented by Zohaib and Ying. This is version 1.0.0 of the project.
+                                    </p>
+                                </div>
+                                <div class="prj_bottom">
+                                    <!-- PLACE HOLDER IMG -->
+                                    <!-- <img class="prj_img" src="./Assets/Processor.png" alt=""> -->
+                                    <img class="prj_img" src="./Assets/main-menu.png" alt="">
+                                </div>
+                            </li>
+                            <li class="projects">
+                                <div class="prj_top">
+                                    <h2><a class="prj_links" href="">Traffic Simulator</a> </h2>
+                                    <p>
+                                        The goal of this project was to implement a traffic simulator in C++
+                                    </p>
+                                </div>
+                                <div class="prj_bottom">
+                                    <!-- PLACE HOLDER IMG -->
+                                    <img class="prj_img" src="./Assets/Processor.png" alt="">
+                                    <!-- <img class="prj_img" src="./Assets/Inner-Control.png" alt=""> -->
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        
+                        
+                        
+                        <button class="nav_arrow" id="prj_right_arr" data-carousel-button="next">
+                            &#10148;
+                        </button>
                     </div>
-                    
-                    <!-- <div class="projects">
-                        <div class="prj_top">
-                            <h2><a class="prj_links" href="https://github.com/ZDON-Official/Processor-Simulator">Processor Simulator</a> </h2>
-                            <p>
-                                This project is a comnputer simulation which uses logisim to simulate a working processor and other I/O devices
-                                This was implemented by Zohaib and Ying. This is version 1.0.0 of the project.
-                            </p>
-                        </div>
-                        <div class="prj_bottom">
-                            <img class="prj_img" src="./Assets/Processor.png" alt="">
-                        </div>
-                    </div> -->
-                    
-                    
-                    
-                    
-                    
-                    <button class="nav_arrow" id="prj_right_arr">
-                        &#10148;
-                    </button>
-                </div>
+                </section>
             </div>
         </div>
 

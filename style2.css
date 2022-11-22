@@ -105,6 +105,9 @@ body{
     color: #ea2434;
     font-size: 70px;
     font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     /* border: 2px solid red; */
     margin: 20px;
@@ -272,11 +275,11 @@ a:hover{
     column-gap: 20px;
 
     color: black;
-    align-items: center;
+    /* align-items: center; */
     /* justify-content: space-between; */
     /* justify-content: center; */
 
-    
+    /* border: 2px solid red; */
     /* background-color: white; */
 }
 
@@ -284,8 +287,16 @@ a:hover{
 #prj_carousel{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+    position: relative;
+}
+
+#prj_carousel ul{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
 }
 
 #prj_left_arr{
@@ -294,6 +305,11 @@ a:hover{
 
 /*! FOR THE NAV ARROWS */
 .nav_arrow{
+    position: absolute;
+    top: 300px;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    z-index: 4;
     color: #ea2434;
     font-size: 40px;
     background-color: inherit;
@@ -306,14 +322,32 @@ a:hover{
     cursor: pointer;
 }
 
+.nav_arrow:focus{
+    /* outline: 1px solid #FFD700; */
+}
+
 .nav_arrow:active{
     color: #FFD700;
     /* transform: (24px); */
 }
 
+#prj_left_arr{
+    left: 1rem;
+}
+
+#prj_right_arr{
+    right: 1rem;
+}
 
 
 .projects{
+    position: absolute;
+    inset: 0;
+
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+
     background-color: #305256;
     color: #FFD700;
     border-radius: 12px;
@@ -321,6 +355,7 @@ a:hover{
     margin: 10px;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
     height: 600px;
+    width: inherit;
 
     display: flex;
     flex-direction: column;
@@ -328,6 +363,11 @@ a:hover{
     /* border: 2px solid gold; */
 }
 
+.projects[data-active]{
+    opacity: 1;
+    transition-delay: 0ms;
+    z-index: 1;
+}
 
 .projects h2{
     color: #ea2434;
@@ -335,10 +375,13 @@ a:hover{
 }
 
 .prj_top{
-    width: 70%;
+    width: 80%;
+    height: 200px;
     border-collapse: collapse;
     padding: 0%;
     margin: 0%;
+
+    /* border: 2px solid red; */
 }
 
 .prj_bottom{
@@ -366,6 +409,7 @@ a:hover{
 
 .prj_img{
     width: auto;
+    max-width: 80%;
     height: 100%;
     border-radius: 8px;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
