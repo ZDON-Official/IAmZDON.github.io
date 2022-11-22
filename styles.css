@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+/*! this is for testing */
 div {
     /* border: 2px solid red; */
 }
@@ -8,14 +9,6 @@ body{
     background-color: #FFD700;
     color: white;
     font-family: 'Roboto', serif;
-
-    /* background-color: #ffc700; */
-    /* background-color: #1A1B25 */
-    /* background-color: #FFD700; */
-    /* opacity: 1;
-    background-image: radial-gradient(#121212 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#121212 0.7000000000000001px, #FFD700 0.7000000000000001px);
-    background-size: 28px 28px;
-    background-position: 0 0, 14px 14px; */
     padding: 0%;
     margin: 0%;
 }
@@ -24,23 +17,9 @@ body{
 #container{
     background-color: #FFD700;
     display: flex;
-    /* justify-content: space-between; */
     margin: 0%;
     padding: 0%;
     width: 100vw;
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 100px; */
-    /* background-color: #3D4849; slate gray */
-    /* padding: 10px 5px;
-    border-radius: 10px;
-    flex-basis: auto;
-    min-width: 460px;
-    max-width: 460px;
-    box-shadow: 0px 5px 25px black;
-    margin-top: 10%; */
 }
 
 #left_side{
@@ -60,13 +39,6 @@ body{
     column-gap: 20px;
     justify-content: space-between;
 }
-/* 
-#img_header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
 
 #right_side{
     /* position: fixed; */
@@ -76,8 +48,6 @@ body{
     align-items: center;
     flex-grow: 1;
     flex-wrap: nowrap;
-
-
 
     opacity: 1;
     /* background-image: radial-gradient(#121212 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#121212 0.7000000000000001px, #FFD700 0.7000000000000001px); */
@@ -90,17 +60,9 @@ body{
     /* width: 100%; */
 }
 
-.about_img{
-    width: 100%;
-    border-radius: 8px;
-    min-height: 400px;
-    max-height: 400px;
-    min-width: 400px;
-    max-width: 400px;
-    object-fit: cover; 
-    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
-}
 
+
+/*! Titles of all pages */
 .page_title{
     color: #ea2434;
     font-size: 70px;
@@ -116,7 +78,8 @@ body{
 
 
 
-
+/** This is for ABOUT page  */
+/*!------------------------------------------------------------------------------- */
 
 /*! Main bio on right side */
 .main_bio{
@@ -156,30 +119,29 @@ body{
     /* opacity: 85%; */
 }
 
-
-/* image and the heading */
-.top_side{
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 5px;
-    /* border: 2px solid gold; */
+.about_img{
+    width: 100%;
+    border-radius: 8px;
+    min-height: 400px;
+    max-height: 400px;
+    min-width: 400px;
+    max-width: 400px;
+    object-fit: cover; 
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
 }
+/*!------------------------------------------------------------------------------- */
 
-/*! KEEP THESE */
+
+
+/** This is for the left MENU bar */
+/*!------------------------------------------------------------------------------- */
+
 /* heading - my name */
 .Header_sec h1{
     color: #FFD700;
     /* color: #D52C48; */
     font: 48px;
     font-weight: bold;
-}
-
-.Header_sec .col{
-    border-collapse: collapse;
-    margin: 0px;
-    padding: 2px;
 }
 
 /* cs at richmond */
@@ -194,21 +156,6 @@ body{
 .Header_sec{
     padding: 0 20px;
 }
-
-
-/*! ------------------------  */
-
-
-
-/*! this is for the main paragraph */
-.text_side{
-    /* border: 2px solid gold; */
-    max-width: 450px;
-}
-
-
-
-
 
 
 /*! this is for links */
@@ -252,16 +199,15 @@ a:hover{
     color: #FFD700;    
 }
 
-
-
-
 #Cur_page{
     color: #ea2434;
 }
+/*!------------------------------------------------------------------------------- */
 
 
 
-/*! All code here is for project page */
+/** All code here is for PROJECT page */
+/*!------------------------------------------------------------------------------- */
 
 #project_con{
     width: 65vw;
@@ -283,7 +229,6 @@ a:hover{
     /* background-color: white; */
 }
 
-
 #prj_carousel{
     display: flex;
     flex-direction: row;
@@ -303,7 +248,7 @@ a:hover{
     transform: rotate(180deg);
 }
 
-/*! FOR THE NAV ARROWS */
+/* FOR THE NAV ARROWS */
 .nav_arrow{
     position: absolute;
     top: 300px;
@@ -322,13 +267,8 @@ a:hover{
     cursor: pointer;
 }
 
-.nav_arrow:focus{
-    /* outline: 1px solid #FFD700; */
-}
-
 .nav_arrow:active{
     color: #FFD700;
-    /* transform: (24px); */
 }
 
 #prj_left_arr{
@@ -385,8 +325,6 @@ a:hover{
 }
 
 .prj_bottom{
-    /* width: 250px; */
-    /* width: inherit; */
     height: 400px;
     width: auto;
     /* background-color: #121212; */
@@ -395,7 +333,6 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-right: 0px; */
 
     /* border: 2px solid red; */
 }
@@ -414,3 +351,82 @@ a:hover{
     border-radius: 8px;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
 }
+
+/*!------------------------------------------------------------------------------- */
+
+
+
+
+
+/** This is for the GALLERY page */
+/*!------------------------------------------------------------------------------- */
+
+/* code from - https://freefrontend.com/css-carousels/ */
+.pic-ctn {
+    width: 50vw;
+    height: 50vh;
+    background-color: #305256;
+    border-radius: 12px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.pic-ctn img{
+    display: block;
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+.pic-ctn {
+    position: relative;
+    /* width: 100vw; */
+    /* height: 300px; */
+    margin-top: 15vh;
+}
+
+.pic-ctn > img {
+    position: absolute;
+    top: 10px;
+    /* left: calc(50% - 100px); */
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+    animation-delay: 2s;      
+}
+img:nth-child(3) {
+    animation-delay: 4s;
+}
+img:nth-child(4) {
+    animation-delay: 6s;
+}
+img:nth-child(5) {
+    animation-delay: 8s;
+}
+/*!------------------------------------------------------------------------------- */
