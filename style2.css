@@ -44,6 +44,7 @@ body{
 }
 
 #left_side{
+    /* position: fixed; */
     /* background-color: #3D4849; */
     background-color: #305256;
     height: 100vh;
@@ -68,6 +69,7 @@ body{
 } */
 
 #right_side{
+    /* position: fixed; */
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -96,7 +98,7 @@ body{
     min-width: 400px;
     max-width: 400px;
     object-fit: cover; 
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
 }
 
 .page_title{
@@ -247,9 +249,7 @@ a:hover{
     color: #FFD700;    
 }
 
-#hello{
-    /* color: white; */
-}
+
 
 
 #Cur_page{
@@ -261,7 +261,7 @@ a:hover{
 /*! All code here is for project page */
 
 #project_con{
-    width: 70vw;
+    width: 65vw;
     height: 90vh;
     /* border-radius: 12px; */
     /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.75); */
@@ -280,37 +280,65 @@ a:hover{
     /* background-color: white; */
 }
 
-/* TODO <- class: header */
-#prj_header{
-    color: #ea2434;
-    font-size: 52px;
-    font-weight: 900;
+
+#prj_carousel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
+#prj_left_arr{
+    transform: rotate(180deg);
+}
+
+/*! FOR THE NAV ARROWS */
+.nav_arrow{
+    color: #ea2434;
+    font-size: 40px;
+    background-color: inherit;
+    align-items: center;
+    border: none;
+    text-shadow: -2px 0px 5px rgba(0, 0, 0, 0.75);
+}
+
+.nav_arrow:hover{
+    cursor: pointer;
+}
+
+.nav_arrow:active{
+    color: #FFD700;
+    /* transform: (24px); */
+}
+
+
+
 .projects{
-    /* background-color: white; */
     background-color: #305256;
     color: #FFD700;
     border-radius: 12px;
     padding: 2px 5px;
-    /* padding-right: 0px; */
     margin: 10px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
     height: 600px;
 
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 
+    /* border: 2px solid gold; */
 }
+
 
 .projects h2{
     color: #ea2434;
     font-size: 20px;
 }
 
-.prj_left{
+.prj_top{
     width: 70%;
+    border-collapse: collapse;
+    padding: 0%;
+    margin: 0%;
 }
 
 .prj_bottom{
@@ -333,9 +361,12 @@ a:hover{
     color: #ea2434;
     font-size: 34px;
     font-weight: bold;
+    padding: 0%;
 }
 
 .prj_img{
     width: auto;
     height: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
 }
