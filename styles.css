@@ -153,8 +153,8 @@ body{
     /* opacity: 90%; */
     color: #ea2434;
     /* color: white; */
-    font: 20px;
-    font-weight: bolder;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .Header_sec{
@@ -357,8 +357,8 @@ a:hover{
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
     font-size: 16px;
     font-weight: 500;
+    opacity: 90%;
 }
-
 .prj_button a:hover{
     color: #FFD700;
 }
