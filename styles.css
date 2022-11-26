@@ -241,6 +241,7 @@ a:hover{
     /* align-items: center; */
     /* justify-content: center; */
 
+    /* border: 2px solid red; */
     position: relative;
 }
 
@@ -300,7 +301,7 @@ a:hover{
     padding: 2px 5px;
     margin: 10px;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
-    height: 600px;
+    height: 650px;
     width: inherit;
 
     display: flex;
@@ -331,29 +332,54 @@ a:hover{
 }
 
 .prj_bottom{
-    height: 400px;
+    /* height: 500px; */
     width: auto;
     /* background-color: #121212; */
     border-radius: 5px;
-    margin: 10px 5px;
+    /* margin: 10px 5px; */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    column-gap: 5px;
+    justify-content: space-between  ;
     align-items: center;
 
     /* border: 2px solid red; */
 }
 
-.prj_links{
+.prj_button{
+    top: 90%;
+    position: absolute;
+    background-color: #ea2434;
+    margin: 10px;
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.prj_button a:hover{
+    color: #FFD700;
+}
+.prj_top h2{
     color: #ea2434;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: bold;
     padding: 0%;
 }
 
+/* .prj_links{
+    color: #ea2434;
+    font-size: 44px;
+    font-weight: bold;
+    padding: 0%;
+} */
+
 .prj_img{
     width: auto;
     max-width: 80%;
-    height: 100%;
+    height: 80%;
     border-radius: 5px;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
 }
