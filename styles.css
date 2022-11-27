@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+:root{
+    --main_color: #FFD700;
+    /* --secondary_color: #ea2434; */
+    --secondary_color: rgb(241, 137, 84);
+    --dark_accent: #a47acb;
+    --dark_shades: #305256;
+}
 /*! this is for testing */
 div {
     /* border: 2px solid red; */
 }
 
 body{
-    background-color: #FFD700;
+    /* background-color: #FFD700; */
+    background-color: var(--main_color);
     color: white;
     font-family: 'Roboto', serif;
     padding: 0%;
@@ -16,7 +24,8 @@ body{
 
 /* this is the container that contains everything */
 #container{
-    background-color: #FFD700;
+    /* background-color: #FFD700; */
+    background-color: var(--main_color);
     display: flex;
     margin: 0%;
     padding: 0%;
@@ -26,8 +35,8 @@ body{
 
 #left_side{
     /* position: fixed; */
-    /* background-color: #3D4849; */
-    background-color: #305256;
+    /* background-color: #305256; */
+    background-color: var(--dark_shades);
     height: 100vh;
     width: 280px;
     min-width: 250px;
@@ -59,16 +68,14 @@ body{
     /* background-image: radial-gradient(#FFD700 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#FFD700 0.7000000000000001px, #2F5154 0.7000000000000001px); */
     background-size: 28px 28px;
     background-position: 0 0, 14px 14px;
-    /* padding: 0px 100px; */
-    /* margin-left: 280px; */
-    /* width: 100%; */
 }
 
 
 
 /*! Titles of all pages */
 .page_title{
-    color: #ea2434;
+    /* color: #ea2434; */
+    color: var(--secondary_color);
     font-size: 70px;
     font-weight: 900;
     display: flex;
@@ -94,33 +101,20 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* height: auto; */
-    /* align-items: center; */
-
-    /* background-color: #FFD700; */
-    background-color: #305256;
-    /* color: white; */
-    /* color: white; */
-    /* background-color: #938FA1; */
-    /* color: #121212; */
+    background-color: var(--dark_shades);
     font-size: 16px;
     border-radius: 8px;
     padding: 20px 10px;
-    /* max-height: 200px; */
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
     /* max-width: 400px; */
 }
 
 .main_bio p{
-    /* margin: 2px 2px;
-    padding: 2px 2px; */
-    font-size: 20px;
-    /* font-weight: lighter; */
-    /* color: white; */
-    color: #FFD700;
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 5px;
+    color: var(--dark_accent);
     opacity: 90%;
-    /* color: #D43D49; */
-    /* opacity: 85%; */
 }
 
 .about_img{
@@ -142,23 +136,23 @@ body{
 
 /* heading - my name */
 .Header_sec h1{
-    color: #FFD700;
-    /* color: #D52C48; */
+    color: var(--main_color);
     font: 48px;
     font-weight: bold;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
 }
 
 /* cs at richmond */
 .Header_sec h4{
     /* opacity: 90%; */
-    color: #ea2434;
-    /* color: white; */
+    color: var(--secondary_color);
     font-size: 18px;
     font-weight: 500;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 .Header_sec{
-    padding: 0 20px;
+    padding: 0px 20px;
 }
 
 
@@ -170,41 +164,35 @@ body{
     align-items: center;
     padding-top: 10px;
     margin: 5px 0px;
-    /* height: 200px; */
-    /* color: #FFD700; */
-    /* color: #D52C48; */
-    color: #FFD700;
+    color: var(--main_color);
     font-size: 32px;
-    /* font-weight: lighter; */
     column-gap: 20px;
-    /* border: 2px solid black; */
 }
 
 .link_btn{
-    /* background-color: white; */
     margin: 5px;
 }
 
 a{
-    /* color: #D52C48; */
-    color: #FFD700;
+    color: var(--main_color);
     text-decoration: none;
     padding: 0 5px;
 }
 
 a:hover{
-    /* opacity: 85%; */
     text-decoration: underline;
-    color: #ea2434;
+    color: var(--secondary_color);
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
 }
 
 
 .socials{
-    color: #FFD700;    
+    color: var(--main_color);    
 }
 
 #Cur_page{
-    color: #ea2434;
+    color: var(--secondary_color);
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
 }
 /*!------------------------------------------------------------------------------- */
 
@@ -217,31 +205,18 @@ a:hover{
     width: 65vw;
     min-width: 400px;
     height: 90vh;
-    /* border-radius: 12px; */
-    /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.75); */
     box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
     column-gap: 20px;
 
-    color: black;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    /* justify-content: center; */
-
-    /* border: 2px solid red; */
-    /* background-color: white; */
+    /* color: black; */
     resize: none;
 }
 
 #prj_carousel{
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
-    /* justify-content: center; */
-
-    /* border: 2px solid red; */
     position: relative;
 }
 
@@ -262,7 +237,8 @@ a:hover{
     /* top: 50%; */
     /* transform: translateY(-50%); */
     z-index: 4;
-    color: #ea2434;
+    /* color: #ea2434; */
+    color: var(--dark_accent);
     font-size: 40px;
     background-color: inherit;
     align-items: center;
@@ -275,7 +251,7 @@ a:hover{
 }
 
 .nav_arrow:active{
-    color: #FFD700;
+    color: var(--secondary_color);
 }
 
 #prj_left_arr{
@@ -295,8 +271,8 @@ a:hover{
     transition: 200ms opacity ease-in-out;
     transition-delay: 200ms;
 
-    background-color: #305256;
-    color: #FFD700;
+    background-color: var(--dark_shades);
+    color: var(--main_color);
     border-radius: 12px;
     padding: 2px 5px;
     margin: 10px;
@@ -314,11 +290,6 @@ a:hover{
     opacity: 1;
     transition-delay: 0ms;
     z-index: 1;
-}
-
-.projects h2{
-    color: #ea2434;
-    font-size: 20px;
 }
 
 .prj_top{
@@ -348,32 +319,23 @@ a:hover{
 .prj_button{
     top: 90%;
     position: absolute;
-    background-color: #ea2434;
+    background-color: var(--dark_accent);
     margin: 10px;
     border: none;
     height: 35px;
     border-radius: 5px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    opacity: 90%;
-}
-.prj_button a:hover{
-    color: #FFD700;
-}
-.prj_top h2{
-    color: #ea2434;
-    font-size: 32px;
-    font-weight: bold;
-    padding: 0%;
 }
 
-/* .prj_links{
-    color: #ea2434;
-    font-size: 44px;
-    font-weight: bold;
+.prj_top h2{
+    color: var(--dark_accent);
+    font-size: 34px;
+    font-weight: 700;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
     padding: 0%;
-} */
+}
 
 .prj_img{
     width: auto;
@@ -392,13 +354,13 @@ a:hover{
 
 
 #resume_container{
-    background-color: #305256;
+    background-color: var(--dark_shades);
     width: 50vw;
     height: 85vh;
     border-radius: 12px;
     box-sizing: border-box;
     padding: 5px 10px;
-    color: #FFD700;
+    color: var(--main_color);
     font-size: 16px;
 
     overflow-x: hidden;
@@ -411,7 +373,9 @@ a:hover{
 }
 
 .sec_title{
-    color: #ea2434;
+    /* color: #ea2434; */
+    color: var(--dark_accent);
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
     font-weight: bold;
     font-size: 30px;
     margin: 10px 0px; 
@@ -441,30 +405,33 @@ a:hover{
 
 .sec_list li::before {
     content: "\2022";
-    color: #ea2434;
+    color: var(--secondary_color);
     font-weight: bold;
     display: inline-block; 
     width: 1em;
     margin-left: -1em;
-  }
+}
 
-  #resume_container h3{
+#resume_container h3{
     margin: 4px 0px;
     padding: 0%;
-    color: #FFD700;
+    color: var(--secondary_color);
     font-weight: 500;
     font-size: 16px;
-  }
-  .info_title h4{
+}
+
+.info_title h4{
     margin: 4px 0px;
     padding: 0%;
-  }
+    color: var(--secondary_color);
+}
 
 
-  hr{
+hr{
     /* border: 1px solid #ea2434; */
-    border: 1px solid #FFD700;
-  }
+    border: 1px solid var(--main_color);
+    background-color: var(--main_color);
+}
 
 
 /*!------------------------------------------------------------------------------- */
@@ -484,7 +451,7 @@ a:hover{
     position: relative;
     width: 950px;
     height: 65vh;
-    background-color: #305256;
+    background-color: var(--dark_shades);
     border-radius: 12px;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
     padding: 10px 20px;
