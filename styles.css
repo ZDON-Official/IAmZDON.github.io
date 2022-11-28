@@ -356,21 +356,26 @@ a:hover{
 #resume_container{
     background-color: var(--dark_shades);
     width: 50vw;
-    height: 85vh;
+    height: 80vh;
     border-radius: 12px;
     box-sizing: border-box;
     padding: 5px 10px;
     color: var(--main_color);
     font-size: 16px;
+    /* margin-bottom: 20px; */
 
     overflow-x: hidden;
     overflow-y: auto;
+
+
+    /* background: linear-gradient(var(--dark_shades) 25%,var(--dark_shades) 70%, rgba(0,0,0,0.75) 100%); */
+    /* border: 2px solid red; */
 }
 
-#resume_container::-webkit-scrollbar{
+/* #resume_container::-webkit-scrollbar{
     width: 5px;
     
-}
+} */
 
 .sec_title{
     /* color: #ea2434; */
