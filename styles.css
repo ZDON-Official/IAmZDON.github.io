@@ -304,7 +304,7 @@ a:hover{
 }
 
 .prj_bottom{
-    /* height: 500px; */
+    height: 500px;
     width: auto;
     border-radius: 5px;
     display: flex;
@@ -340,7 +340,7 @@ a:hover{
 .prj_img{
     width: auto;
     max-width: 85%;
-    height: 85%;
+    height: 80%;
     border-radius: 5px;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
 }
