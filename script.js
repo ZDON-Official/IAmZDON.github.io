@@ -65,3 +65,12 @@ if(path === '/gallery.html'){
     console.log('clear timeout')
     clearInterval()
 }
+
+
+
+
+var date = document.getElementById('date')
+
+let cur_year = new Date().getFullYear()
+
+date.innerText = cur_year

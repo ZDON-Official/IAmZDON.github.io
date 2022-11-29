@@ -17,10 +17,6 @@
         <div id="left_side">
             <!-- this is the left side -->
             <div id="img_header">
-
-                <!-- <div class="rect">
-                    <img src="Assets/profile_pic.png" alt="My profile photo">
-                </div> -->
                 <div class="Header_sec">
                     <h1 class="col">Zohaib Rana</h1>
                     <h4 >CS Student <br> University of Richmond</h4>
@@ -33,11 +29,20 @@
                 <a class="link_btn"  href="index.html">About</a> 
             </div>
             <div class="socials">
-                <a href="http://zrana1214@gmail.com">email</a>
-                &middot;
-                <a href="https://github.com/ZDON-Official">github</a>
-                &middot;
-                <a href="https://www.linkedin.com/in/zdon/">linkedin</a>
+                
+                <div>
+                    <a href="http://zrana1214@gmail.com">email</a>
+                    &middot;
+                    <a href="https://github.com/ZDON-Official">github</a>
+                    &middot;
+                    <a href="https://www.linkedin.com/in/zdon/">linkedin</a>
+                </div>
+                <div class="copyright">
+                    &copy; 
+                    <span id="date"></span>
+                    Zohaib Rana, All right reserved 
+                </div>
+
             </div>
 
         </div>
@@ -55,7 +60,7 @@
                         <ul id="prj_list" data-projects>
                             <li class="projects" data-active>
                                 <div class="prj_top">
-                                    <h2 class="prj_links">Traffic Simulator</h2>
+                                    <h2 class="prj_links" id="traffic_title"><a href="traffic_sim.html">Traffic Simulator <span class="ln_arr">&#8690;</span> </a></h2>
                                     <p>
                                         The goal of this project was to implement a traffic simulator in C++
                                     </p>
@@ -139,7 +144,6 @@
                                     </p>
                                 </div>
                                 <div class="prj_bottom">
-                                    <!-- PLACE HOLDER IMG -->
                                     <img class="prj_img" src="/Assets/DInvestLogo.png" alt="DiscordInvest logo">
                                     <button class="prj_button"><a href="https://github.com/ZDON-Official/DiscordInvest">View on Github</a></button>
                                 </div>
