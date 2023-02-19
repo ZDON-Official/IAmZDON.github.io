@@ -8,6 +8,17 @@
     --dark_shades: #305256;
 }
 
+
+/*! ===========================================================================  */
+/*
+TODO - make the website respond to screen size
+
+TODO ex make project image disappear if window is too small
+*/
+
+/*! ===========================================================================  */
+
+
 /*! this is for testing */
 div {
     /* border: 2px solid red; */
@@ -171,7 +182,7 @@ a:hover{
 .main_bio{
 
     width: 650px;
-    height: 620px;
+    /* height: 520px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -195,10 +206,10 @@ a:hover{
 .about_img{
     width: 100%;
     border-radius: 8px;
-    min-height: 400px;
-    max-height: 400px;
-    min-width: 400px;
-    max-width: 400px;
+    min-height: 350px;
+    max-height: 350px;
+    min-width: 350px;
+    max-width: 350px;
     object-fit: cover;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
 }
