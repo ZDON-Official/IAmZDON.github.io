@@ -18,6 +18,8 @@ TODO EX. make project image disappear if window is too small
 TODO - make it support phone screens
 
 TODO - Fix gallery
+
+TODO - add support for dark mode
 */
 
 /*! ===========================================================================  */
@@ -229,7 +231,7 @@ a:hover{
 
 #project_con{
     width: 65vw;
-    min-width: 400px;
+    min-width: 500px;
     height: 90vh;
     box-sizing: border-box;
     display: flex;
@@ -309,6 +311,7 @@ a:hover{
     display: flex;
     flex-direction: column;
 
+    /* min-width: 800px; */
     /* border: 2px solid gold; */
 }
 
@@ -366,6 +369,7 @@ a:hover{
 .prj_img{
     width: auto;
     max-width: 85%;
+    min-width: 300px;
     height: 80%;
     border-radius: 6px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.75);
@@ -584,3 +588,86 @@ hr{
 
 
 /*!------------------------------------------------------------------------------- */
+
+
+
+
+
+/** All this code is for the shrink button  */
+#left_side_small{
+    height: 100vh;
+    background-color: var(--dark_shades);
+    width: 50px;
+    /* border: 1px solid red;s */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: center; */
+    display: none;
+}
+
+#shrink_btn{
+    border: none;
+    background-color: transparent;
+
+}
+#shrink_btn h1{
+    color: var(--main_color);
+    font-size: 28px;
+}
+
+
+#left_side{
+    /* display: none; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*! ------------------------------------------------------------- */
+/** This section contains code to support different screen sizes */
+
+@media screen and (max-width: 600px){
+
+    #left_side{
+        display: none;
+    }
+    #right_side{
+        /* border: 2px solid red; */
+        height: 100vh;
+        width: 100%;
+    }
+    .page_title{
+        /* border: 2px solid red; */
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: right;
+    }
+    #left_side_small{
+        display: flex;
+    }
+
+    .prj_img{
+        height: auto;
+        max-width: 60%;
+        min-width: none;
+    }
+
+    #left_side_small{
+        /* height: 100vh;
+        background-color:#a47acb;
+        width: 50px; */
+        display: flex;
+    }
+}
