@@ -635,6 +635,9 @@ hr{
     border: none;
     background-color: transparent;
     cursor: pointer;
+    margin: 0%;
+    padding: 0%;
+    height: 55px;
 }
 #shrink_btn:hover h1{
     border-bottom: 2px solid var(--main_color);
@@ -657,7 +660,11 @@ hr{
     height: 100px;
 }
 
-
+#small_logo{
+    color: var(--secondary_color);
+    margin: 0%;
+    padding: 0%;
+}
 
 
 
