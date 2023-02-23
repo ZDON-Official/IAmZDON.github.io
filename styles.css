@@ -524,7 +524,7 @@ hr{
 /* code from - https://softauthor.com/javascript-image-slider-slideshow-carousel/ */
 .pic-ctn {
     position: relative;
-    width: 950px;
+    width: 850px;
     height: 65vh;
     background-color: var(--dark_shades);
     border-radius: 6px;
@@ -534,7 +534,7 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    /* border: 2px solid red; */
 }
 .pic[data-active]{
     opacity: 1;
