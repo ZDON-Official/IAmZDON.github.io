@@ -111,11 +111,13 @@ body{
 /*!------------------------------------------------------------------------------- */
 
 /* heading - my name */
-.Header_sec h1{
+#name{
     color: var(--main_color);
-    font: 48px;
+    font-size: 32px;
     font-weight: bold;
     text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
+    margin: 0%;
+    padding: 0%;
 }
 
 /* cs at richmond */
@@ -125,12 +127,25 @@ body{
     font-size: 18px;
     font-weight: 500;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.75);
+    margin: 0%;
 }
 
 .Header_sec{
     padding: 0px 20px;
 }
 
+#shrink_btn_big{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0%;
+    padding: 0%;
+    /* border: 2px solid red; */
+}
+
+#shrink_btn_big:hover h1{
+    border-bottom: 2px solid var(--main_color);
+}
 
 /*! this is for links */
 .Links{
@@ -156,7 +171,8 @@ a{
 }
 
 a:hover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid var(--secondary_color);
     color: var(--secondary_color);
     text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
 }
@@ -199,6 +215,7 @@ a:hover{
     padding: 20px 10px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
     /* max-width: 400px; */
+    /* border: 2px solid #ea2434; */
 }
 
 .main_bio p{
@@ -597,28 +614,39 @@ hr{
 #left_side_small{
     height: 100vh;
     background-color: var(--dark_shades);
-    width: 50px;
+    width: 60px;
     /* border: 1px solid red;s */
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* justify-content: center; */
+    justify-content: space-between;
     display: none;
 }
 
 #shrink_btn{
     border: none;
     background-color: transparent;
-
+    cursor: pointer;
 }
+#shrink_btn:hover h1{
+    border-bottom: 2px solid var(--main_color);
+}
+
 #shrink_btn h1{
     color: var(--main_color);
     font-size: 28px;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    /* border-bottom: 3px solid var(--main_color); */
 }
 
-
-#left_side{
-    /* display: none; */
+#left_side_small .socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid #ea2434; */
+    height: 100px;
 }
 
 
@@ -669,5 +697,13 @@ hr{
         background-color:#a47acb;
         width: 50px; */
         display: flex;
+    }
+
+    .main_bio{
+        width: 450px;
+    }
+
+    #resume_container{
+        width: 480px;
     }
 }

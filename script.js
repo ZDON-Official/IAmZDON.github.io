@@ -40,13 +40,13 @@ if(path === '/gallery.html'){
     //     console.log(`file name ${pic}`)
     // })
 
-    
-    
+
+
     //! this for looping through the images
-    const images = document.querySelectorAll("[data-pic]"); 
+    const images = document.querySelectorAll("[data-pic]");
     let i = 0;
-    
-    setInterval(function(){ 
+
+    setInterval(function(){
         console.log('in timeout')
         if(i == 0) {
             images[i].className = "fade-in-image"
@@ -58,7 +58,7 @@ if(path === '/gallery.html'){
             images[i - 1].className = "fade-out-image"
             images[i].className = "fade-in-image"
         }
-        
+
         i++
     }, 2000)
 } else{
@@ -74,3 +74,51 @@ var date = document.getElementById('date')
 let cur_year = new Date().getFullYear()
 
 date.innerText = cur_year
+
+
+
+// ! This is code for navbar
+
+
+function navBarFunction(x){
+    if(x.matches === true){
+        nav_bar.addEventListener("click", () => {
+            small_bar.style.display = "none"
+            big_bar.style.display = "flex"
+            console.log("btn pressed")
+        })
+    }
+}
+
+const nav_bar = document.getElementById("shrink_btn")
+const nav_bar_big = document.getElementById("shrink_btn_big")
+const small_bar = document.getElementById("left_side_small")
+const big_bar = document.getElementById("left_side")
+var nav_bar_active = window.matchMedia("(min-width: 800px)")
+console.log(nav_bar_active)
+
+navBarFunction(nav_bar_active)
+nav_bar_active.addEventListener("change", navBarFunction)
+
+// nav_bar.addEventListener("click", () => {
+//     if(nav_bar_active){
+//         small_bar.style.display = "none"
+//         big_bar.style.display = "flex"
+//         console.log("btn pressed")
+//     }
+// })
+
+nav_bar_big.addEventListener("click", () => {
+    small_bar.style.display = "flex"
+    big_bar.style.display = "none"
+    console.log("btn pressed")
+})
+
+// var auto_hide = window.matchMedia("max-width: 600px")
+
+// function autoHide(x){
+//     big_bar.style.display = "none"
+//     small_bar.style.display = "flex"
+// }
+// autoHide(auto_hide)
+// auto_hide.addEventListener("change", autoHide)
