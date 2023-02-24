@@ -80,38 +80,53 @@ date.innerText = cur_year
 // ! This is code for navbar
 
 
-function navBarFunction(x){
-    if(x.matches === true){
-        nav_bar.addEventListener("click", () => {
-            small_bar.style.display = "none"
-            big_bar.style.display = "flex"
-            console.log("btn pressed")
-        })
-    }
-}
+// function navBarFunction(x){
+//     if(x.matches === true){
+//         nav_bar.addEventListener("click", () => {
+//             // small_bar.style.display = "none"
+//             // big_bar.style.display = "flex"
+//             // console.log("btn pressed")
+//         })
+//     }
+// }
 
 const nav_bar = document.getElementById("shrink_btn")
 const nav_bar_big = document.getElementById("shrink_btn_big")
 const small_bar = document.getElementById("left_side_small")
 const big_bar = document.getElementById("left_side")
 var nav_bar_active = window.matchMedia("(min-width: 800px)")
-console.log(nav_bar_active)
+var theme_off = false
 
-navBarFunction(nav_bar_active)
-nav_bar_active.addEventListener("change", navBarFunction)
+// navBarFunction(nav_bar_active)
+// nav_bar_active.addEventListener("change", navBarFunction)
 
-// nav_bar.addEventListener("click", () => {
-//     if(nav_bar_active){
-//         small_bar.style.display = "none"
-//         big_bar.style.display = "flex"
-//         console.log("btn pressed")
-//     }
-// })
+nav_bar.addEventListener("click", () => {
+    console.log('btn pressed')
+
+    if(theme_off === false){
+        theme_off = true
+        document.documentElement.style.setProperty('--BG', 'rgb(33, 36, 53)');
+        document.documentElement.style.setProperty('--dark_shades', '#05383f');
+    }else{
+        document.documentElement.style.setProperty('--BG', 'rgb(231, 231, 231)');
+        document.documentElement.style.setProperty('--dark_shades', '#305256');
+
+        theme_off = false
+    }
+})
 
 nav_bar_big.addEventListener("click", () => {
-    small_bar.style.display = "flex"
-    big_bar.style.display = "none"
-    console.log("btn pressed")
+    console.log('big btn pressed')
+    if(theme_off === false){
+        theme_off = true
+        document.documentElement.style.setProperty('--BG', 'rgb(33, 36, 53)');
+        document.documentElement.style.setProperty('--dark_shades', '#05383f');
+    }else{
+        document.documentElement.style.setProperty('--BG', 'rgb(231, 231, 231)');
+        document.documentElement.style.setProperty('--dark_shades', '#305256');
+
+        theme_off = false
+    }
 })
 
 // var auto_hide = window.matchMedia("max-width: 600px")
