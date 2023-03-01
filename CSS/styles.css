@@ -221,7 +221,7 @@ a:hover{
 .main_bio{
 
     width: 650px;
-    /* height: 520px; */
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -230,31 +230,35 @@ a:hover{
     font-size: 16px;
     border-radius: 6px;
     padding: 20px 10px;
-    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.75);
     /* max-width: 400px; */
     margin-left: 10px;
     margin-bottom: 20px;
     flex-shrink: 1;
+    padding-bottom: 2px;
     /* border: 2px solid red; */
 }
 
 .main_bio p{
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: lighter;
     padding-left: 5px;
     color: var(--dark_accent);
+    /* color: white; */
     opacity: 90%;
+    /* border: 2px solid red; */
 }
 
 .about_img{
-    width: 100%;
+    /* width: 50%; */
     border-radius: 6px;
-    min-height: 350px;
-    max-height: 350px;
+    min-height: 300px;
+    max-height: 300px;
+    align-items: center;
     min-width: 350px;
     max-width: 350px;
     object-fit: cover;
-    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.75);
 }
 /*!------------------------------------------------------------------------------- */
 
@@ -269,7 +273,7 @@ a:hover{
 #project_con{
     width: 55vw;
     min-width: 600px;
-    height: 90vh;
+    /* height: 90vh; */
     box-sizing: border-box;
     display: flex;
     flex-shrink: 0;
@@ -345,8 +349,8 @@ a:hover{
     border-radius: 6px;
     padding: 2px 5px;
     margin: 10px;
-    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.75);
-    height: 650px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.75);
+    height: 550px;
     width: inherit;
 
     display: flex;
@@ -413,7 +417,7 @@ a:hover{
     min-width: 300px;
     height: 80%;
     border-radius: 6px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 
@@ -444,7 +448,7 @@ a:hover{
     overflow-x: hidden;
     overflow-y: auto;
     margin-left: 10px;
-    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.75);
 
     /* background: linear-gradient(var(--dark_shades) 25%,var(--dark_shades) 70%, rgba(0,0,0,0.75) 100%); */
     /* border: 2px solid red; */
@@ -546,15 +550,16 @@ hr{
 .pic-ctn {
     position: relative;
     width: 850px;
-    height: 65vh;
+    height: 70vh;
     background-color: var(--dark_shades);
     border-radius: 6px;
-    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.75);
     padding: 10px 20px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding-top: 20px; */
     /* border: 2px solid red; */
 }
 .pic[data-active]{
@@ -571,10 +576,9 @@ hr{
     height: 96%;
     object-fit: scale-down;
     border-radius: 6px;
-    object-position: top;
+    object-position: center;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.75);
-
-
+    /* border: 2px solid red; */
 }
 
 .fade-in-image {

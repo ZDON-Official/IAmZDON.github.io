@@ -1,4 +1,8 @@
 console.log("script loaded")
+
+// * ==========================================================================
+// ! This is code for the projects carousel
+
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
 console.log(`button is ${buttons.length}`)
@@ -23,11 +27,14 @@ buttons.forEach(button => {
     })
 })
 
+// * ==========================================================================
+// ! This is code for the gallery
+
 var path = window.location.pathname
 // const fs = require('fs');
 // var img = fs.readdirSync('/gallery_assets/')
 console.log(path)
-if(path === '/gallery.html'){
+if(path === '/HTML/gallery.html'){
 
     //! this is for loading new images into the div
     // var fs = require('fs');
@@ -66,8 +73,8 @@ if(path === '/gallery.html'){
     clearInterval()
 }
 
-
-
+// * ==========================================================================
+// ! This is code for displaying current year next to copyright
 
 var date = document.getElementById('date')
 
@@ -76,19 +83,8 @@ let cur_year = new Date().getFullYear()
 date.innerText = cur_year
 
 
-
+// * ==========================================================================
 // ! This is code for navbar
-
-
-// function navBarFunction(x){
-//     if(x.matches === true){
-//         nav_bar.addEventListener("click", () => {
-//             // small_bar.style.display = "none"
-//             // big_bar.style.display = "flex"
-//             // console.log("btn pressed")
-//         })
-//     }
-// }
 
 const nav_bar = document.getElementById("shrink_btn")
 const nav_bar_big = document.getElementById("shrink_btn_big")
