@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="Assets/logo-32x32.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zohaib Rana</title>
+
+    <link rel="stylesheet" href="/CSS/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://kit.fontawesome.com/2481b66331.js" crossorigin="anonymous"></script>
+
+    <script src="/JS/script.js" defer></script>
+    <script src="/JS/project.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="left_side_small">
+
+            <div>
+                <button id="shrink_btn"><h1 class="col">ZR</h1></button>
+                <h4 id="small_logo"><i class="far fa-spider"></i></h4>
+            </div>
+
+            <div class="Links">
+                <a class="link_btn" id="Cur_page_small" href="projects.html">P</a>
+                <a class="link_btn" href="resume.html">R</a>
+                <a class="link_btn" href="gallery.html">G</a>
+                <a class="link_btn"  href="index.html">A</a>
+            </div>
+
+            <div class="socials">
+                <!-- ! Make these logos -->
+                <a href="http://zrana1214@gmail.com"><i class="fas fa-envelope"></i></a>
+                &middot;
+                <a href="https://github.com/ZDON-Official"><i class="fab fa-github"></i></a>
+                &middot;
+                <a href="https://www.linkedin.com/in/zdon/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div id="left_side">
+            <!-- this is the left side -->
+            <div class="Header_sec">
+                <button id="shrink_btn_big"><h1 id="name" class="col">Zohaib Rana</h1></button>
+                <h4 >CS Student <br> University of Richmond</h4>
+            </div>
+            <div class="Links">
+                <a class="link_btn" id="Cur_page" href="projects.html">Projects</a>
+                <a class="link_btn" href="resume.html">Resume</a>
+                <a class="link_btn" href="gallery.html">Gallery</a>
+                <a class="link_btn"  href="index.html">About</a>
+            </div>
+            <div class="socials">
+                <div>
+                    <a href="http://zrana1214@gmail.com">email</a>
+                    &middot;
+                    <a href="https://github.com/ZDON-Official">github</a>
+                    &middot;
+                    <a href="https://www.linkedin.com/in/zdon/">linkedin</a>
+                </div>
+                <div class="copyright">
+                    &copy;
+                    <span id="date"></span>
+                    Zohaib Rana, All rights reserved
+                </div>
+            </div>
+        </div>
+
+
+        <!--! This is the right side -->
+        <div id="right_side">
+            <div id="project_con">
+                <h1 id="prj_header"class="page_title">PROJECTS</h1>
+                <section aria-label="current project">
+                    <div id="prj_carousel" data-carousel>
+                        <button class="nav_arrow" id="prj_left_arr" data-carousel-button="prev">
+                            &#10148;
+                        </button>
+
+
+                        <ul id="prj_list" data-projects>
+
+                            <li class="projects" data-active>
+                                <div class="prj_top">
+                                    <h2 class="prj_links" id="traffic_title">
+                                        <!-- <a href="traffic_sim.html">Traffic Simulator <span class="ln_arr">&#8690;</span> </a> -->
+                                        Traffic Simulator
+                                    </h2>
+                                    <p>
+                                        The goal of this project was to implement a traffic simulator in C++
+                                    </p>
+                                </div>
+                                <div class="prj_bottom">
+                                    <img class="prj_img" src="/Assets/traffic_sim.png" alt="image of the traffic simulator">
+                                    <button class="prj_button"><a href="https://github.com/ZDON-Official/Traffic_Simulation">View on Github</a></button>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="nav_arrow" id="prj_right_arr" data-carousel-button="next">
+                            &#10148;
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

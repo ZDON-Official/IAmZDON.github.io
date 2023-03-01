@@ -3,48 +3,48 @@ const project_list = `[
     {
         "title" : "Processor Simulator",
         "info"  : "This project is a computer simulation which uses logisim to simulate a working processor and other I/O devices, This was implemented by Zohaib and Ying. This is version 1.0.0 of the project.",
-        "image" : "Assets/Processor.png",
+        "image" : "/Assets/Processor.png",
         "link"  : "https://github.com/ZDON-Official/Processor-Simulator"
     },
     {
         "title" : "MIPS Assembler",
         "info"  : "This project converts MIPS instructions into binary to be used by a processor simulator. The project is implemented in C++.",
-        "image" : "Assets/mips_assembler.png",
+        "image" : "/Assets/mips_assembler.png",
         "link"  : "https://github.com/ZDON-Official/MIPS-Assembler"
     },
     {
         "title" : "Ultimate Tic-Tac-Toe",
         "info"  : "This project is am implementation of Ultimate Tic-Tac-Toe in Python. This game utilizes the Pygame python library to implement music and visuals",
-        "image" : "Assets/ultimate.png",
+        "image" : "/Assets/ultimate.png",
         "link"  : "https://github.com/ZDON-Official/UltimateTicTacToe"
     },
     {
         "title" : "Spydur Research",
         "info"  : "In this project, my team and I designed a website for finding research opportunities on campus. Our main goal was to make finding and applying to research opportunities a streamlined experience.",
-        "image" : "Assets/Spydur_research.png",
+        "image" : "/Assets/Spydur_research.png",
         "link"  : "https://github.com/ZDON-Official/Spydur_research"
     },
     {
         "title" : "Discord Invest",
         "info"  : "Final submission for GryphHacks 2022. The goal of this project was to create a mock trading Discord bot.",
-        "image" : "Assets/DInvestLogo.png",
+        "image" : "/Assets/DInvestLogo.png",
         "link"  : "https://github.com/ZDON-Official/DiscordInvest"
     },
     {
         "title" : "HeART of the Sea",
         "info"  : "Final submission for AhoyHacks. Won hidden treasure award for best UI/UX. Pirates of the Caribbean inspired game made in Python using the Pygame library.",
-        "image" : "Assets/HeartofSea.jpg",
+        "image" : "/Assets/HeartofSea.jpg",
         "link"  : "https://github.com/ZDON-Official/AhoyHacks"
     },
     {
         "title" : "ODIN Landing page",
         "info"  : "Implementation of a website landing page template, for ODIN Project, using HTML and CSS.",
-        "image" : "Assets/ODIN_Landing_page.png",
+        "image" : "/Assets/ODIN_Landing_page.png",
         "link"  : "https://github.com/ZDON-Official/Odin-Landing-Page"
     }
 ]`
 
-//! Code to load projects 
+//! Code to load projects
 
 const parent = document.getElementById('prj_list')
 

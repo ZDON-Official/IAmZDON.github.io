@@ -15,3 +15,4 @@
   * turns of when navigating to new page
   * play around with colors
 * ~~Devtools failed to load error~~
+* Change tab logo
