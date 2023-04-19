@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 :root{
-    --main_color: #FFD700;
+    /* --main_color: #c6c6c6; */
     /* --secondary_color: #ba8721; */
+    /* --secondary_color: rgb(230, 124, 71); */
+    /* --dark_accent: #a47acb; */
+    /* --dark_accent: #ffffff; */
+    /* --dark_accent: #da3a3a; */
+    /* --dark_shades: #305256; */
+    /* --dark_shades: #458650; */
+    /* --dark_shades: #05383f; */
+    /* --BG: rgb(231, 231, 231); */
+
+
+    --main_color: #FFD700;
     --secondary_color: rgb(241, 137, 84);
     --dark_accent: #a47acb;
-    /* --dark_accent: #da3a3a; */
     --dark_shades: #305256;
-    /* --dark_shades: #05383f; */
     --BG: rgb(231, 231, 231);
 }
 
@@ -413,7 +422,9 @@ a:hover{
 
 .prj_img{
     width: auto;
-    max-width: 85%;
+    /* padding: 10px; */
+    /* margin: 10px; */
+    max-width: 80%;
     min-width: 300px;
     height: 80%;
     border-radius: 6px;

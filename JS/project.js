@@ -1,6 +1,12 @@
 
 const project_list = `[
     {
+        "title" : "Audio Visualization",
+        "info"  : "This project is a audio visualizer using the P5.js framework. This was implemented by Zohiab and Rinki.",
+        "image" : "/Assets/audio_playing.png",
+        "link"  : "https://github.com/ZDON-Official/Audio-Visualization"
+    },
+    {
         "title" : "Processor Simulator",
         "info"  : "This project is a computer simulation which uses logisim to simulate a working processor and other I/O devices, This was implemented by Zohaib and Ying. This is version 1.0.0 of the project.",
         "image" : "/Assets/Processor.png",
