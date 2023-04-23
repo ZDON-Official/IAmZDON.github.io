@@ -12,7 +12,8 @@
 * Add support for phone screens
 * Fix gallery
 * ~~Add dark mode support~~
-  * turns of when navigating to new page
+  * turns off when navigating to new page
   * play around with colors
 * ~~Devtools failed to load error~~
 * Change tab logo
+* Change the color palette
