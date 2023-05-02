@@ -11,7 +11,7 @@
 * ~~fix some sections and font size when window is small~~
 * Add support for phone screens
 * Fix gallery
-* ~~Add dark mode support~~
+* Add dark mode support
   * turns off when navigating to new page
   * play around with colors
 * ~~Devtools failed to load error~~
