@@ -26,3 +26,4 @@
 * Change the color palette
   * change the green background
 * remove dead/unused code
+* safari/chrome bottom bar blocks content
