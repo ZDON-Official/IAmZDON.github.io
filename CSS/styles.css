@@ -945,6 +945,41 @@ hr{
 
     /* Resume page */
 
-    
+    #resume_container{
+        width: 90vw;
+        height: 75vh;
+
+
+        /* border: 2px solid red; */
+    }
+
+    #resume_container::-webkit-scrollbar{
+        /* border: 2px solid red; */
+        padding-top: 0px;
+        width: 0rem;
+    }
+
+    #resume_container::-webkit-scrollbar-track {
+        background: none;
+    }
+
+    #resume_container::-webkit-scrollbar-thumb {
+        /* background: var(--main_color); */
+        background: none;
+        border-radius: none;
+    }
+
+    .sec_title{
+        font-size: 1.5rem;
+    }
+
+    .sec_bottom{
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .sec_list{
+        width: 100%;
+    }
 
 }
