@@ -54,7 +54,6 @@ div {
 
 /*! ===========================================================================  */
 
-/*! might need to remove this  */
 
 body{
     /* background-color: #FFD700; */
@@ -80,16 +79,10 @@ body{
 }
 
 #left_side{
-    /* position: fixed; */
-    /* background-color: #305256; */
     background-color: var(--dark_shades);
     height: 100vh;
-    /* width: 25%;
-    min-width: 25%; */
     max-width: 250px;
     margin: 0%;
-    /* border-radius:0px 8px 8px 0px; */
-    /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.75); */
     padding: 20px 0px;
     padding-bottom: 0%;
     display: flex;
@@ -103,7 +96,6 @@ body{
 }
 
 #right_side{
-    /* position: fixed; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -114,14 +106,6 @@ body{
     padding-left: 2em;
     padding-right: 1em;
 
-    /* opacity: 1; */
-    /* background-image: radial-gradient(#121212 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#121212 0.7000000000000001px, #FFD700 0.7000000000000001px); */
-    /* background-image: radial-gradient(var(--dark_accent) 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(var(--secondary_color) 0.7000000000000001px, #202535 0.7000000000000001px); */
-    /* background-image: radial-gradient(#FFD700 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#FFD700 0.7000000000000001px, #2F5154 0.7000000000000001px); */
-    /* background-size: 28px 28px;
-    background-position: 0 0, 14px 14px; */
-
-    /* background-color: rgb(33, 36, 53); */
     background-color: var(--BG);
 }
 
@@ -285,16 +269,13 @@ a:hover{
     /* border: 2px solid red; */
 }
 
-.main_bio div{
-    height: 100%;
+.rect{
     min-width: 50%;
     max-width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 1;
-
-    /* border: 2px solid red; */
 }
 
 .about_img{
@@ -716,14 +697,8 @@ hr{
 
 /** All this code is for the shrink button  */
 #left_side_small{
-    height: 100vh;
     background-color: var(--dark_shades);
-    width: 60px;
-    /* border: 1px solid red;s */
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     display: none;
 }
 
@@ -747,14 +722,7 @@ hr{
     /* border-bottom: 3px solid var(--main_color); */
 }
 
-#left_side_small .socials{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* border: 2px solid #ea2434; */
-    height: 100px;
-}
+
 
 #small_logo{
     color: var(--secondary_color);
@@ -778,14 +746,6 @@ hr{
 
 @media screen and (max-width: 600px){
 
-    #left_side{
-        display: none;
-    }
-    #right_side{
-        /* border: 2px solid red; */
-        height: 100vh;
-        width: 100%;
-    }
     .page_title{
         /* border: 2px solid red; */
         width: 100%;
@@ -820,18 +780,7 @@ hr{
     }
 
 
-    #left_side_small{
-        /* height: 100vh;
-        background-color:#a47acb;
-        width: 50px; */
-        display: flex;
-    }
-
-    .main_bio{
-        width: 450px;
-    }
-
-    #resume_container{
+    /* #resume_container{
         width: 480px;
     }
 
@@ -842,14 +791,150 @@ hr{
 
     .pic-ctn{
         width: 450px;
-        /* border:  2px solid red; */
     }
 
     .pic-ctn img{
-        /* width: 96%; */
         height: 55%;
         margin-top: 20%;
+    } */
+
+
+}
+
+#mobile_socials{
+    display: none;
+}
+
+/* This code is for mobile site */
+/* TODO - better code */
+@media screen and (max-width: 767px) {
+
+    #left_side{
+        display: none;
     }
 
+    #container{
+        flex-direction: column;
+        height: 100vh;
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+    #left_side_small{
+        display: flex;
+        /* border: 2px solid red; */
+        /* flex-direction: row; */
+        width: 100vw;
+        /* height: 100px; */
+        height: 4em;
+        border-radius: 0.5em 0.5em 0em 0em;
+    }
+
+    #left_side_small .Links_small{
+        margin: 0%;
+        padding: 0%;
+        /* justify-content: space-evenly; */
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #left_side_small .link_btn_small{
+        margin: 0%;
+        padding: 0%;
+        /* border: 2px solid; */
+        box-sizing: border-box;
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+    }
+
+    #left_side_small .socials{
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid #ea2434; */
+        height: 100px;
+    }
+
+    #right_side{
+        /* border: 4px solid red; */
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .page_title{
+        margin: 0%;
+        margin-top: 1rem;
+    }
+
+
+
+    /* About page */
+
+
+    .main_bio{
+        flex-direction: column;
+        height: 70vh;
+        width: 90vw;
+        margin: 0%;
+        align-items: center;
+    }
+
+    .main_bio p{
+        box-sizing: border-box;
+        width: 95%;
+        /* height: 50%; */
+        /* border: 2px solid red; */
+        /* display: flex; */
+        margin: 0%;
+    }
+
+    .rect{
+        width: 100%;
+        max-width: 100%;
+        height: 50%;
+        /* border: 2px solid red; */
+    }
+
+    #hello{
+        /* display: inline-flex; */
+        /* display: block; */
+        font-size: 1.4em;
+        margin: 0%;
+        padding: 0%;
+        margin-bottom: 2px;
+        /* border: 2px solid red; */
+    }
+
+
+
+    /* code for socials on about page*/
+
+    #mobile_socials{
+        color: white;
+        display: flex;
+        box-sizing: border-box;
+        width: 80%;
+        margin: 0%;
+        padding: 5%;
+
+        font-size: 2em;
+
+        /* height: 10%; */
+
+        justify-content: space-between;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
 
 }
