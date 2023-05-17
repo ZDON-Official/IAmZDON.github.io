@@ -302,15 +302,11 @@ a:hover{
 
 #project_con{
     width: 60vw;
+    min-width: 550px;
     height: 70vh;
     box-sizing: border-box;
     display: flex;
-    flex-shrink: 0;
     flex-direction: column;
-    column-gap: 20px;
-
-    /* border: 2px solid red; */
-    resize: none;
 }
 
 #prj_carousel{
@@ -332,8 +328,8 @@ a:hover{
 /* FOR THE NAV ARROWS */
 .nav_arrow{
     position: absolute;
-    margin-top: 40%;
-    /* top: 50%; */
+    /* margin-top: 40%; */
+    top: 30vh;
     /* transform: translateY(-50%); */
     z-index: 4;
     /* color: #ea2434; */
@@ -374,20 +370,14 @@ a:hover{
 
     background-color: var(--dark_shades);
     color: var(--main_color);
-    /* border-radius: 6px; */
-    /* padding: 2px 5px; */
     margin-top: 2%;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.75);
     height: 60vh;
-    /* width: 100vw; */
 
     border-radius: 0.5em;
 
     display: flex;
     flex-direction: column;
-
-    /* min-width: 800px; */
-    /* border: 2px solid gold; */
 }
 
 .projects[data-active]{
@@ -404,8 +394,6 @@ a:hover{
     padding: 0px;
     padding-top: 0.5em;
     padding-left: 1em;
-    /* margin: 1em; */
-    /* margin-left: 2em; */
 
     /* border: 2px solid red; */
 }
@@ -737,71 +725,9 @@ hr{
 
 
 
-
-
-
-
-
-
 /*! ------------------------------------------------------------- */
 /** This section contains code to support different screen sizes */
 
-@media screen and (max-width: 600px){
-
-    .page_title{
-        /* border: 2px solid red; */
-        width: 100%;
-        margin-left: 0%;
-        margin-right: 0%;
-        text-align: right;
-    }
-
-    #project_con{
-        min-width: 500px;
-    }
-
-    .prj_img{
-        height: auto;
-        max-width: 80%;
-        min-width: none;
-        /* border: 2px solid red; */
-    }
-
-    .nav_arrow{
-        /* color: red; */
-        top: 450px;
-
-    }
-
-    #prj_left_arr{
-        left: 5rem;
-    }
-
-    #prj_right_arr{
-        right: 5rem;
-    }
-
-
-    /* #resume_container{
-        width: 480px;
-    }
-
-    .sec_list{
-        width: 400px;
-        font-size: 8px;
-    }
-
-    .pic-ctn{
-        width: 450px;
-    }
-
-    .pic-ctn img{
-        height: 55%;
-        margin-top: 20%;
-    } */
-
-
-}
 
 #mobile_socials{
     display: none;
@@ -967,10 +893,6 @@ hr{
     }
 
 
-    /* Project page */
-
-
-
 
     /* Resume page */
 
@@ -1011,4 +933,46 @@ hr{
         width: 100%;
     }
 
+
+    /* Project page */
+
+    .nav_arrow{
+        top: 51vh;
+        /* right: 50px; */
+        /* margin-top: -2%; */
+    }
+
+    #prj_left_arr{
+        left: 2rem;
+    }
+
+    #prj_right_arr{
+        right: 2rem;
+    }
+
+    #project_con{
+        /* border: 2px solid red; */
+        margin: 0%;
+        padding: 0%;
+
+        width: auto;
+        min-width: 85vw;
+        max-width: 85vw;
+        height: 65svh;
+        /* flex-shrink: 1; */
+        /* max-width: 30vw; */
+        /* width: 50vw; */
+        /* height: auto; */
+        /* height: 5vh; */
+    }
+
+    .projects{
+        max-width: auto;
+        margin: 0%;
+    }
+
+    .prj_img{
+        max-width: 90%;
+        height: auto;
+    }
 }
