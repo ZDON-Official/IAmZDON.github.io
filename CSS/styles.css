@@ -816,8 +816,8 @@ hr{
         padding: 0;
         border:  0;
         outline: 0;
-        height: 100svh;
-        padding-bottom: env(safe-area-inset-bottom);
+        /* height: 100vh; */
+        /* padding-bottom: env(safe-area-inset-bottom); */
     }
 
     #left_side{
@@ -826,15 +826,15 @@ hr{
 
     #container{
         flex-direction: column;
-        height: auto;
+        height: 100svh;
         margin: 0%;
         padding: 0%;
         box-sizing: border-box;
         justify-content: space-between;
 
         /* ! These are for testing */
-        /* padding-bottom: 100px; */
         background-color: wheat;
+        padding-bottom: env(safe-area-inset-bottom);
         /* border: 2px solid red; */
     }
 
