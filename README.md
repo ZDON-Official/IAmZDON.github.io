@@ -11,9 +11,9 @@
 * ~~fix some sections and font size when window is small~~
 * Add support for different screen sizes
   * work on resume and galary page
-    * set max height for resume section
+    * set max width for resume section
   * make it support phone screens
-    * project page
+    * ~~project page~~
     * gallery page
   * play around with about page (photo on left, bio on right etc)
   * make left bar font responsive
