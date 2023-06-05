@@ -759,7 +759,7 @@ hr{
         justify-content: space-between;
 
         /* ! These are for testing */
-        background-color: wheat;
+        /* background-color: wheat; */
         padding-bottom: env(safe-area-inset-bottom);
         /* border: 2px solid red; */
     }
