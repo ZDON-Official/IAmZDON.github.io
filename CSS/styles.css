@@ -343,7 +343,7 @@ a:hover{
 
 .nav_arrow:hover{
     cursor: pointer;
-    /* color: var(--secondary_color); */
+    color: var(--secondary_color);
     /* opacity: .8; */
 }
 
