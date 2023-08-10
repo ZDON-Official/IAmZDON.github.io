@@ -10,7 +10,7 @@
   * ~~EX. make project image disappear if window is too small~~
 * ~~fix some sections and font size when window is small~~
 * Add support for different screen sizes
-  * work on resume and galary page
+  * work on resume and gallery page
     * set max width for resume section
   * make it support phone screens
     * ~~project page~~
