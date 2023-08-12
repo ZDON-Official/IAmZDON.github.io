@@ -41,13 +41,15 @@
 
     TODO - dark mode turns of when navigating to a different page
 
+    TODO - rename dark mode button
+
     TODO - dark mode colors
 */
 
 /*! ===========================================================================  */
 
 
-/*! this is for testing */
+/*!  THIS IS ONLY FOR TESTING */
 div {
     /* border: 2px solid red; */
 }
@@ -67,6 +69,12 @@ body{
 
     padding-bottom: env(safe-area-inset-bottom);
 }
+
+/* body.dark{
+    background-color: #222;
+    color: #eaeaea;
+} */
+
 
 /* this is the container that contains everything */
 #container{
@@ -160,6 +168,13 @@ body{
     align-items: center;
 }
 
+
+/*
+================================================================
+!           FOR DARK MODE BUTTON
+================================================================
+*/
+
 #shrink_btn_big{
     border: none;
     background-color: transparent;
@@ -171,7 +186,12 @@ body{
 
 #shrink_btn_big:hover h1{
     /* border-bottom: 2px solid var(--main_color); */
+    color: darkgray;
 }
+
+/*
+================================================================
+*/
 
 /*! this is for links */
 .Links{
