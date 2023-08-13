@@ -47,7 +47,7 @@
 
     # TODO - add support for dark mode
 
-    TODO - dark mode turns of when navigating to a different page
+    # TODO - dark mode turns of when navigating to a different page
 
     TODO - rename dark mode button
 
@@ -61,6 +61,7 @@
 div {
     /* border: 2px solid red; */
 }
+/*!  THIS IS ONLY FOR TESTING */
 
 /*! ===========================================================================  */
 
@@ -151,7 +152,7 @@ body{
 .Header_sec h4{
     /* opacity: 90%; */
     color: var(--secondary_color);
-    opacity: 0.6;
+    opacity: 0.7;
     font-size: 1em;
     font-weight: lighter;
     margin: 0%;
@@ -228,9 +229,11 @@ a:hover{
 
 .copyright{
     font-size: 0.6em;
+    font-weight: lighter;
     margin: 0%;
     margin-top: 10px;
     text-align: center;
+    color: var(--secondary_color);
 }
 
 #Cur_page{
