@@ -16,8 +16,8 @@
 
   --main_color: #142727df;
   /* --main_color: #ffffffdf; */
-  --secondary_color: rgb(150, 16, 16);
-  /* --secondary_color: #bfa181; */
+  /* --secondary_color: rgb(150, 16, 16); */
+  --secondary_color: #bfa181;
   --dark_shades: #eff3f3; /* TODO rename this */
   /* --dark_shades: #763a3a; */
   --background_color: rgb(255, 255, 255);
@@ -468,7 +468,7 @@ a:hover {
 .prj_img {
   width: auto;
   max-width: 70%;
-  max-height: 60%;
+  max-height: 65%;
   border-radius: 0.2em;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   /* border: 2px solid gold; */
@@ -852,7 +852,7 @@ hr {
     /* display: flex; */
     margin: 0%;
     padding: 0% 5% 0% 5%;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .rect {
@@ -980,7 +980,12 @@ hr {
 /* This code is for small mobile screen */
 /* TODO - add more */
 @media screen and (max-width: 599px) {
+  .page_title {
+    font-size: 2.5em;
+  }
+
   .main_bio {
-    font-size: 0.8em;
+    font-size: 0.7em;
+    /* border: solid red; */
   }
 }
