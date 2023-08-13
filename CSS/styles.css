@@ -545,7 +545,7 @@ a:hover {
   margin-left: 1em;
   padding: 0%;
   list-style: none;
-  box-sizing:content-box;
+  box-sizing: content-box;
   min-width: none;
   height: auto;
   max-height: 10em;
@@ -938,9 +938,9 @@ hr {
     width: 100%;
   }
 
-  /* .sec_list {
-    max-width: 100%;
-  } */
+  .sec_list {
+    max-height: none;
+  }
 
   /* Project page */
 
