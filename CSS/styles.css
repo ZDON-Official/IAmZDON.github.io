@@ -67,7 +67,7 @@ div {
 /*! ===========================================================================  */
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--background_color);
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   padding: 0%;
