@@ -266,7 +266,7 @@ a:hover {
   background-color: var(--dark_shades);
 
   justify-content: space-between;
-  border-radius: 0.5em;
+  border-radius: 0.2em;
 
   box-shadow: 0px 10px 25px rgba(0, 0, 0);
 
@@ -786,12 +786,15 @@ hr {
     margin: 0%;
     padding: 0%;
     display: flex;
+    box-sizing: border-box;
     /* border: 2px solid red; */
     /* flex-direction: row; */
     width: 100vw;
     /* height: 100px; */
-    height: 4em;
-    border-radius: 1em 1em 0em 0em;
+    height: 2.6em;
+    /* border-radius: 0.5em 0.5em 0em 0em; */
+    /* background-color: maroon; */
+
   }
 
   #left_side_small .Links_small {
@@ -816,7 +819,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.6em;
+    font-size: 2em;
     font-weight: 400;
   }
 
