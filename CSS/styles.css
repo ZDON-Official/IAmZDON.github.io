@@ -803,7 +803,6 @@ hr {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* border: 2px solid red; */
   }
 
   #left_side_small .link_btn_small {
@@ -816,7 +815,12 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
+    font-size: 2.6em;
+    font-weight: 400;
+  }
+
+  .link_btn_small:hover{
+    text-decoration: none;
   }
 
   #left_side_small .socials {
