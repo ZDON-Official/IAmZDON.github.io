@@ -1012,9 +1012,9 @@ hr{
 
 /* This code is for large/ high res screens */
 /* TODO - add more */
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1300px){
     .main_bio{
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
 }
 
