@@ -79,6 +79,7 @@ function loadResources(jsonItem) {
                     <img class="prj_img" src="${jsList[i].image}" alt="image of ${jsList[i].title}">
                     <button class="prj_button"><a href="${jsList[i].link}">View on Github</a></button>
                 </div>
+                <div class="prj_empty_div"></div>
             `;
       child.innerHTML = content;
       parent.appendChild(child);

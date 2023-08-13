@@ -966,18 +966,27 @@ hr {
     width: auto;
     min-width: 85vw;
     max-width: 85vw;
-    height: 65svh;
+    height: 70svh;
+    /* border: solid red; */
   }
 
   .projects {
     max-width: auto;
     margin: 0%;
-  }
+    }
 
   .prj_img {
-    max-width: 90%;
+    max-width: 95%;
     height: auto;
-    max-height: 60%;
+    max-height: 100%;
+  }
+
+  .prj_bottom{
+    max-height:30vh
+  }
+
+  .prj_empty_div{
+    min-height: 10em;
   }
 }
 
