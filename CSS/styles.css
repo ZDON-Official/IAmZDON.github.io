@@ -14,12 +14,12 @@
 
   /* --main_color: #FFD700; */
 
-  --main_color: #142727df;
+  --main_color: #102020e7;
   /* --main_color: #ffffffdf; */
   /* --secondary_color: rgb(150, 16, 16); */
   --secondary_color: #bfa181;
   --dark_shades: #e9eef1; /* TODO rename this */
-  /* --dark_shades: #763a3a; */
+  --dark_shades: #763a3a;
   --background_color: #e9eef1;
 
   /* --main_color: rgb(255, 255, 255, 0.9);
@@ -225,7 +225,7 @@ a:hover {
 
 .socials {
   text-align: center;
-  color: var(--main_color);
+  color: var(--secondary_color);
   margin-bottom: 0.5em;
   font-size: 0.8em;
   width: 100%;
@@ -315,7 +315,7 @@ a:hover {
   align-items: center;
   object-fit: scale-down;
   /* box-shadow: 0px 0.1em 1em rgba(0, 0, 0, 0.4); */
-  /* border: 2px solid var(--main_color); */
+  border: 0.1em solid var(--secondary_color);
 }
 /*!------------------------------------------------------------------------------- */
 
