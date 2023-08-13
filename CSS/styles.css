@@ -19,7 +19,7 @@
     --secondary_color: rgb(150, 16, 16);
     --dark_accent: #a47acb;
     --dark_shades: #ecf1f3;
-    --BG: rgb(255, 255, 255);
+    --background_color: rgb(255, 255, 255);
 
 
     /* --main_color: rgb(255, 255, 255, 0.9);
@@ -69,7 +69,7 @@ div {
 
 
 body{
-    background-color: var(--BG);
+    background-color: var(--background_color);
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     padding: 0%;
@@ -94,7 +94,11 @@ body{
 #left_side{
     background-color: var(--dark_shades);
     height: 100vh;
-    max-width: 250px;
+
+    /*! Maybe change this, make it more responsive */
+    min-width: 15em;
+
+    max-width: 30em;
     margin: 0%;
     padding: 20px 0px;
     padding-bottom: 0%;
@@ -102,10 +106,11 @@ body{
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    column-gap: 20px;
+    /* column-gap: 20px; */
     justify-content: space-between;
-    resize: none;
+    /* resize: none; */
 
+    /* border: solid red; */
 }
 
 #right_side{
@@ -119,7 +124,10 @@ body{
     padding-left: 2em;
     padding-right: 1em;
 
-    background-color: var(--BG);
+    background-color: var(--background_color);
+
+    /* border: 15px solid gold; */
+
 }
 
 
@@ -225,8 +233,12 @@ a:hover{
 
 
 .socials{
+    text-align: center;
     color: var(--main_color);
-    margin: 10px;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    width: 100%;
+    /* border: 2px solid black; */
 }
 
 .copyright{
@@ -271,7 +283,7 @@ a:hover{
 }
 
 #hello{
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 0%;
     padding: 0%;
 }
@@ -365,12 +377,12 @@ a:hover{
 
 .nav_arrow:hover{
     cursor: pointer;
-    color: var(--BG);
+    color: var(--background_color);
     /* opacity: .8; */
 }
 
 .nav_arrow:active{
-    color: var(--BG);
+    color: var(--background_color);
 }
 
 #prj_left_arr{
@@ -796,7 +808,7 @@ hr{
         width: 100vw;
         /* height: 100px; */
         height: 4em;
-        border-radius: 0.5em 0.5em 0em 0em;
+        border-radius: 1em 1em 0em 0em;
     }
 
     #left_side_small .Links_small{
@@ -840,7 +852,7 @@ hr{
         margin: 0%;
         padding: 0%;
 
-        background-color: transparent;
+        /* background-color: transparent; */
     }
 
     .page_title{
@@ -859,33 +871,38 @@ hr{
         max-height: 70vh;
         width: 90vw;
         margin: 5% 0% 5% 0%;
+        padding: 0%;
         /* margin-bottom: 10%; */
         align-items: center;
-
+        justify-content: space-between;
 
         /* border: 2px solid red; */
     }
 
     .main_bio p{
         box-sizing: border-box;
-        width: 95%;
+        width: 100%;
         /* height: 50%; */
         /* border: 2px solid red; */
         /* display: flex; */
         margin: 0%;
+        padding: 0% 5% 0% 5%;
+        font-size: 1em;
     }
 
     .rect{
         width: 100%;
         max-width: 100%;
-        height: 50%;
-        /* border: 2px solid red; */
+        height: 40%;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+        /* border: 2px solid black; */
     }
 
     #hello{
         /* display: inline-flex; */
         /* display: block; */
-        font-size: 1.4em;
+        font-size: 1.2em;
         margin: 0%;
         padding: 0%;
         margin-bottom: 2px;
@@ -989,5 +1006,23 @@ hr{
         max-width: 90%;
         height: auto;
         max-height: 60%;
+    }
+}
+
+
+/* This code is for large/ high res screens */
+/* TODO - add more */
+@media screen and (min-width: 1200px){
+    .main_bio{
+        font-size: 1.6em;
+    }
+}
+
+
+/* This code is for small mobile screen */
+/* TODO - add more */
+@media screen and (max-width: 599px){
+    .main_bio{
+        font-size: .8em;
     }
 }
