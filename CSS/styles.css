@@ -482,6 +482,7 @@ a:hover{
 
 
 
+/*!------------------------------------------------------------------------------- */
 /** This is for the RESUME page */
 /*!------------------------------------------------------------------------------- */
 
@@ -526,8 +527,8 @@ a:hover{
 
 .sec_title{
     /* color: #ea2434; */
-    color: var(--dark_accent);
-    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
+    /* color: var(--dark_accent); */
+    /* text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75); */
     font-weight: bold;
     font-size: 1.8rem;
     margin: 10px 0px;
@@ -539,7 +540,7 @@ a:hover{
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-    color: white;
+    color: var(--main_color);
 }
 
 .sec_bottom{
@@ -582,9 +583,8 @@ a:hover{
 
 
 hr{
-    /* border: 1px solid #ea2434; */
     border: 1px solid var(--main_color);
-    background-color: var(--main_color);
+    /* background-color: var(--secondary_color); */
 }
 
 #qual{
