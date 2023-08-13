@@ -37,3 +37,4 @@
 * ~~safari/chrome bottom bar blocks content~~
   * test it more
 * Rename some of the classes names
+* add horizontal scroll to resume page when needed

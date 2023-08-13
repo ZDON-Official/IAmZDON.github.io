@@ -67,7 +67,7 @@ div {
 /*! ===========================================================================  */
 
 body {
-  background-color: white;
+  background-color: var(--background-color);
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   padding: 0%;
@@ -526,7 +526,7 @@ a:hover {
   /* color: var(--dark_accent); */
   /* text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75); */
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 10px 0px;
   /* padding: 0%; */
 }
@@ -534,23 +534,26 @@ a:hover {
 .sec_top {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 0.9em;
   color: var(--main_color);
 }
 
-.sec_bottom {
-  width: 700px;
-}
-
 .sec_list {
+  margin-left: 1em;
+  padding: 0%;
   list-style: none;
-  box-sizing: border-box;
-  width: 85%;
+  box-sizing:content-box;
+  min-width: none;
+  height: auto;
+  max-height: 10em;
 }
 
 .sec_list li {
-  font-size: 14px;
+  font-size: 0.8em;
+  font-weight: lighter;
   text-align: left;
+  padding-left: 1em;
+  margin: 0.4em 0;
 }
 
 .sec_list li::before {
@@ -567,7 +570,7 @@ a:hover {
   padding: 0%;
   color: var(--secondary_color);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.2em;
 }
 
 .info_title h4 {
@@ -932,9 +935,9 @@ hr {
     width: 100%;
   }
 
-  .sec_list {
-    width: 100%;
-  }
+  /* .sec_list {
+    max-width: 100%;
+  } */
 
   /* Project page */
 
