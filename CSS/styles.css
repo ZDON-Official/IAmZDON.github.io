@@ -15,10 +15,11 @@
   /* --main_color: #FFD700; */
 
   --main_color: #142727df;
-  /* --secondary_color: rgb(150, 16, 16); */
-  --secondary_color: #bfa181;
-  --dark_accent: #a47acb;
-  --dark_shades: #ecf1f3; /* TODO rename this */
+  /* --main_color: #ffffffdf; */
+  --secondary_color: rgb(150, 16, 16);
+  /* --secondary_color: #bfa181; */
+  --dark_shades: #eff3f3; /* TODO rename this */
+  /* --dark_shades: #763a3a; */
   --background_color: rgb(255, 255, 255);
 
   /* --main_color: rgb(255, 255, 255, 0.9);
@@ -66,7 +67,7 @@ div {
 /*! ===========================================================================  */
 
 body {
-  background-color: var(--background_color);
+  background-color: white;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   padding: 0%;
@@ -131,7 +132,7 @@ body {
   /* color: #ea2434; */
   color: var(--secondary_color);
   font-size: 4em;
-  font-weight: 700;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -466,8 +467,8 @@ a:hover {
 
 .prj_img {
   width: auto;
-  max-width: 75%;
-  max-height: 65%;
+  max-width: 70%;
+  max-height: 60%;
   border-radius: 0.2em;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   /* border: 2px solid gold; */
@@ -659,6 +660,7 @@ hr {
 /*!------------------------------------------------------------------------------- */
 
 /** This section is for the Traffic-Simulation page */
+/* TODO Delete this section */
 /*!------------------------------------------------------------------------------- */
 
 .traffic_info {
@@ -685,7 +687,7 @@ hr {
 }
 
 #traffic_title a {
-  color: var(--dark_accent);
+  color: var(--main_color);
 }
 #traffic_title a:hover {
   color: var(--secondary_color);
