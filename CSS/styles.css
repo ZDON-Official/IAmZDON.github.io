@@ -962,11 +962,11 @@ hr {
   }
 
   #prj_left_arr {
-    left: 1rem;
+    left: 0.5rem;
   }
 
   #prj_right_arr {
-    right: 1rem;
+    right: 0.5rem;
   }
 
   #project_con {
