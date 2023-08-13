@@ -276,6 +276,9 @@ a:hover {
   font-size: 2.5em;
   margin: 0%;
   padding: 0%;
+  opacity: 1;
+  font-weight: 900;
+  color: var(--main_color);
 }
 
 .main_bio p {
@@ -287,9 +290,9 @@ a:hover {
   margin-right: 1em;
   /* color: var(--dark_accent); */
 
-  /* color: white; */
+  color: var(--secondary_color);
 
-  opacity: 70%;
+  opacity: 75%;
   align-content: center;
   justify-content: center;
   /* border: 2px solid red; */
