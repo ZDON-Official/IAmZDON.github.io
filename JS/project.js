@@ -1,4 +1,3 @@
-
 const project_list = `[
     {
         "title" : "Audio Visualization",
@@ -47,23 +46,29 @@ const project_list = `[
         "info"  : "Implementation of a website landing page template, for ODIN Project, using HTML and CSS.",
         "image" : "/Assets/ODIN_Landing_page.png",
         "link"  : "https://github.com/ZDON-Official/Odin-Landing-Page"
+    },
+    {
+        "title" : "Portfolio Website",
+        "info"  : "This is my personal portfolio website created using HTML, CSS, and Javascript",
+        "image" : "/Assets/ZDON_Portfolio_website.png",
+        "link"  : "https://github.com/ZDON-Official/ZDON-Official.github.io"
     }
-]`
+]`;
 
 //! Code to load projects
 
-const parent = document.getElementById('prj_list')
+const parent = document.getElementById("prj_list");
 
-function loadResources(jsonItem){
-    if (parent && jsonItem){
-        const jsList = JSON.parse(jsonItem)
-        console.log(jsList)
+function loadResources(jsonItem) {
+  if (parent && jsonItem) {
+    const jsList = JSON.parse(jsonItem);
+    console.log(jsList);
 
-        for (i in jsList){
-            let child = document.createElement('li')
-            child.className = 'projects'
+    for (i in jsList) {
+      let child = document.createElement("li");
+      child.className = "projects";
 
-            let content = `
+      let content = `
                 <div class="prj_top">
                     <h2 class="prj_links">${jsList[i].title}</h2>
                     <p>
@@ -74,12 +79,11 @@ function loadResources(jsonItem){
                     <img class="prj_img" src="${jsList[i].image}" alt="image of ${jsList[i].title}">
                     <button class="prj_button"><a href="${jsList[i].link}">View on Github</a></button>
                 </div>
-            `
-            child.innerHTML = content
-            parent.appendChild(child)
-
-        }
+            `;
+      child.innerHTML = content;
+      parent.appendChild(child);
     }
+  }
 }
 
-loadResources(project_list)
+loadResources(project_list);
