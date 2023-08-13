@@ -166,22 +166,31 @@ if (localStorage.getItem("dark-mode") == "dark") {
 // Toggle dark UI
 
 darkMode_Toggle.addEventListener("click", () => {
-//   console.log("big btn pressed");
+  //   console.log("big btn pressed");
 
   if (darkMode_off === false) {
     // console.log("dark mode on");
     darkMode_off = true;
 
-    document.documentElement.style.setProperty("--BG", "rgb(33, 36, 53)");
+    document.documentElement.style.setProperty(
+      "--background_color",
+      "rgb(33, 36, 53)"
+    );
     document.documentElement.style.setProperty("--dark_shades", "#05383f");
+    document.documentElement.style.setProperty("--main_color", "#ecf1f3");
 
     // document.body.classList.add("dark");
     localStorage.setItem("dark-mode", "dark");
   } else {
     // console.log("dark mode off");
 
-    document.documentElement.style.setProperty("--BG", "rgb(231, 231, 231)");
-    document.documentElement.style.setProperty("--dark_shades", "#305256");
+    document.documentElement.style.setProperty(
+      "--background_color",
+      "rgb(255, 255, 255)"
+    );
+    document.documentElement.style.setProperty("--dark_shades", "#ecf1f3");
+    document.documentElement.style.setProperty("--main_color", "#142727df");
+
 
     // document.body.classList.remove("dark");
     localStorage.setItem("dark-mode", "light");
