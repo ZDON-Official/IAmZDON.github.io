@@ -280,7 +280,7 @@ a:hover{
     margin-right: 1em;
     /* color: var(--dark_accent); */
 
-    color: white;
+    /* color: white; */
 
     opacity: 70%;
     align-content: center;
@@ -301,11 +301,11 @@ a:hover{
     max-height: 80%;
     max-width: 90%;
     margin: 1.5em;
-    border-radius: 6px;
+    border-radius: 0.2em;
     align-items: center;
     object-fit:scale-down;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.75);
-    /* border: 2px solid red; */
+    /* box-shadow: 0px 0.1em 1em rgba(0, 0, 0, 0.4); */
+    /* border: 2px solid var(--main_color); */
 }
 /*!------------------------------------------------------------------------------- */
 
@@ -350,7 +350,7 @@ a:hover{
     /* transform: translateY(-50%); */
     z-index: 4;
     /* color: #ea2434; */
-    color: var(--dark_accent);
+    color: var(--secondary_color);
     font-size: 40px;
     background-color: inherit;
     align-items: center;
@@ -360,12 +360,12 @@ a:hover{
 
 .nav_arrow:hover{
     cursor: pointer;
-    color: var(--secondary_color);
+    color: var(--BG);
     /* opacity: .8; */
 }
 
 .nav_arrow:active{
-    color: var(--secondary_color);
+    color: var(--BG);
 }
 
 #prj_left_arr{
@@ -386,7 +386,7 @@ a:hover{
     transition-delay: 200ms;
 
     background-color: var(--dark_shades);
-    color: var(--main_color);
+    /* color: var(--main_color); */
     margin-top: 2%;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.75);
     height: 60vh;
@@ -415,10 +415,10 @@ a:hover{
 }
 
 .prj_top h2{
-    color: var(--dark_accent);
+    color: var(--secondary_color);
     font-size: 2em;
     font-weight: 700;
-    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
+    /* text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75); */
     padding: 0%;
     margin: 0%;
 }
@@ -444,23 +444,32 @@ a:hover{
 .prj_button{
     top: 85%;
     position: absolute;
-    background-color: var(--dark_accent);
+    background-color: transparent;
+    border: 2px solid var(--secondary_color);
     margin-bottom: 1rem;
-    border: none;
+    /* border: none; */
     height: 3em;
-    border-radius: 6px;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
-    font-size: 1em;
-    font-weight: 500;
+    border-radius: 4px;
+    /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5); */
+    /* font-size: 1em; */
+    font-weight: bolder;
+}
+
+.prj_button:hover{
+    cursor: pointer;
+}
+
+.prj_button a:hover{
+    text-decoration: none;
 }
 
 .prj_img{
     width: auto;
     max-width: 75%;
-    height: 60%;
-    border-radius: 0.5em;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
-    /* border: 2px solid red; */
+    max-height: 65%;
+    border-radius: 0.2em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    /* border: 2px solid gold; */
 }
 
 
