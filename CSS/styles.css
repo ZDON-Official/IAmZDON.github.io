@@ -15,7 +15,7 @@
   /* --main_color: #FFD700; */
 
   --main_color: #102020e7;
-  --text_color: #e9eef1;
+  --text_color: rgba(255, 255, 255, 0.7);
   /* --main_color: #ffffffdf; */
   /* --secondary_color: rgb(150, 16, 16); */
   --secondary_color: #bfa181;
