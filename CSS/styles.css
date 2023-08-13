@@ -18,9 +18,9 @@
   /* --main_color: #ffffffdf; */
   /* --secondary_color: rgb(150, 16, 16); */
   --secondary_color: #bfa181;
-  --dark_shades: #eff3f3; /* TODO rename this */
+  --dark_shades: #e9eef1; /* TODO rename this */
   /* --dark_shades: #763a3a; */
-  --background_color: rgb(255, 255, 255);
+  --background_color: #e9eef1;
 
   /* --main_color: rgb(255, 255, 255, 0.9);
     --secondary_color: rgb(241, 137, 84);
@@ -94,8 +94,7 @@ body {
   height: 100vh;
 
   /*! Maybe change this, make it more responsive */
-  min-width: 15em;
-
+  min-width: 10em;
   max-width: 30em;
   margin: 0%;
   padding: 20px 0px;
@@ -228,16 +227,16 @@ a:hover {
   text-align: center;
   color: var(--main_color);
   margin-bottom: 0.5em;
-  font-size: 1.2em;
+  font-size: 0.8em;
   width: 100%;
   /* border: 2px solid black; */
 }
 
 .copyright {
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-weight: lighter;
   margin: 0%;
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: center;
   color: var(--secondary_color);
 }
@@ -976,11 +975,23 @@ hr {
   }
 }
 
+/*! ================================================================= */
 /* This code is for large/ high res screens */
+/*! ================================================================= */
 /* TODO - add more */
 @media screen and (min-width: 1300px) {
   .main_bio {
     font-size: 1.5em;
+    /* border: solid red; */
+    max-width: 60%;
+  }
+
+  #right_container {
+    display: flex;
+    /* border: solid red; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
 
