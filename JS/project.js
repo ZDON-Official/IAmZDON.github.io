@@ -19,7 +19,7 @@ const project_list = `[
     },
     {
         "title" : "Ultimate Tic-Tac-Toe",
-        "info"  : "This project is am implementation of Ultimate Tic-Tac-Toe in Python. This game utilizes the Pygame python library to implement music and visuals",
+        "info"  : "This project is am implementation of Ultimate Tic-Tac-Toe in Python. This game utilizes the Pygame Python library to implement music and visuals",
         "image" : "/Assets/ultimate.png",
         "link"  : "https://github.com/ZDON-Official/UltimateTicTacToe"
     },
