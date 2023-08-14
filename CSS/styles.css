@@ -16,12 +16,12 @@
 
   --main_color: #102020e7;
   --text_color: rgba(255, 255, 255, 0.7);
-  --text_color: #102020e7;
+  /* --text_color: #102020e7; */
   /* --main_color: #ffffffdf; */
   /* --secondary_color: rgb(150, 16, 16); */
   --secondary_color: #bfa181;
   --dark_shades: #e9eef1; /* TODO rename this */
-  /* --dark_shades: #763a3a; */
+  --dark_shades: #763a3a;
   --background_color: #e9eef1;
 
   /* --main_color: rgb(255, 255, 255, 0.9);
@@ -753,6 +753,10 @@ hr {
 /* This code is for mobile site */
 /* TODO - better code */
 @media screen and (max-width: 767px) {
+    :root{
+  --text_color: rgba(255, 255, 255, 0.7);
+
+    }
   body {
     margin: 0;
     padding: 0;
@@ -785,16 +789,16 @@ hr {
   #left_side_small {
     margin: 0%;
     padding: 0%;
+    /* padding-bottom: 0.2em; */
     display: flex;
     box-sizing: border-box;
     /* border: 2px solid red; */
     /* flex-direction: row; */
     width: 100vw;
     /* height: 100px; */
-    height: 2.6em;
+    height: 3.2em;
     /* border-radius: 0.5em 0.5em 0em 0em; */
     /* background-color: maroon; */
-
   }
 
   #left_side_small .Links_small {
@@ -819,12 +823,17 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 400;
+    /* color: var(--background_color); */
   }
 
   .link_btn_small:hover{
     text-decoration: none;
+  }
+
+  #Cur_page_small{
+    /* color: var(--background_color); */
   }
 
   #left_side_small .socials {
@@ -863,7 +872,7 @@ hr {
     /* margin-bottom: 10%; */
     align-items: center;
     /* justify-content: space-between; */
-
+    background-color: var(--background_color);
     /* border: 2px solid red; */
   }
 
@@ -893,6 +902,7 @@ hr {
     padding: 0%;
     min-height: 95%;
     width: auto;
+    border: 0.1em solid var(--dark_shades);
   }
 
   #hello {
@@ -902,13 +912,13 @@ hr {
     margin: 0%;
     padding: 0%;
     margin-bottom: 2px;
+    color: var(--dark_shades);
     /* border: 2px solid red; */
   }
 
   /*! code for socials on about page*/
 
   #mobile_socials {
-    color: var(--main_color);
     display: flex;
     box-sizing: border-box;
     width: 70%;
@@ -920,6 +930,10 @@ hr {
     justify-content: space-between;
     align-items: center;
     /* border: 2px solid red; */
+  }
+
+  #mobile_socials *{
+    color: var(--dark_shades);
   }
 
   /*! Resume page */
