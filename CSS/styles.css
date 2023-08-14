@@ -940,7 +940,7 @@ hr {
   #resume_container {
     width: 90vw;
     height: 65vh;
-
+    background-color: var(--background_color);
     /* border: 2px solid red; */
   }
 
@@ -961,6 +961,7 @@ hr {
 
   .sec_title {
     font-size: 1.5rem;
+    color: var(--dark_shades);
   }
 
   .sec_bottom {
@@ -979,7 +980,7 @@ hr {
     color: var(--dark_shades);
   }
 
-  .nav_arrow:hover{
+  .nav_arrow:hover,:active{
     color: var(--secondary_color);
   }
 
