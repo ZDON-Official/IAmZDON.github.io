@@ -37,6 +37,10 @@
     2.9px 11.7px 11.8px rgba(0, 0, 0, 0.335), 5px 20px 60px rgba(0, 0, 0, 0.5);
 }
 
+/* ::selection {
+  background-color: rgb(114, 60, 114);
+} */
+
 /*! ===========================================================================  */
 /*
     # TODO - make the website respond to screen size
