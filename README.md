@@ -13,9 +13,9 @@
   * Support small phone screens and high res screens
   * ~~!! Fix project images overflowing on smaller screen sizes~~
     * need more testing with other screen sizes
-      * Small phone screen sizes (Ex - iphone se)
+      * Small phone screen sizes (Ex - Galaxy Fold)
   * work on resume and gallery page
-    * set max width for resume section
+    * ~~set max width for resume section~~
     * test with different screen sizes
   * make it support phone screens
     * ~~about~~
@@ -23,7 +23,7 @@
     * ~~resume~~
     * gallery page
   * ~~play around with 'About' page (photo on left, bio on right etc)~~
-  * make left bar font responsive
+  * ~~make left bar font responsive~~
   * !! MAKE Font responsive
 * Fix gallery
 * Add dark mode support
@@ -31,10 +31,12 @@
   * play around with the color palette
 * ~~Devtools failed to load error~~
 * Change tab logo
-* Change the color palette
+* ~~Change the color palette~~
   * ~~change the green background~~
 * remove dead/unused code
 * ~~safari/chrome bottom bar blocks content~~
   * test it more
 * Rename some of the classes names
-* add horizontal scroll to resume page when needed
+* ~~add horizontal scroll to resume page when needed~~
+* compress images
+* change main bio image
