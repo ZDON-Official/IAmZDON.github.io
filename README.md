@@ -28,6 +28,7 @@
 * Fix gallery
 * Add dark mode support
   * ~~turns off when navigating to new page (Fixed)~~
+  * update dark mode colors
   * play around with the color palette
 * ~~Devtools failed to load error~~
 * Change tab logo
