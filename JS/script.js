@@ -73,10 +73,7 @@ date.innerText = cur_year;
 //! THIS CODE IS FOR DARK MODE ACROSS THE DIFFERENT PAGES
 //* =================================================================================================
 
-const darkMode_Toggle = document.getElementById("shrink_btn_big");
-const small_bar = document.getElementById("left_side_small");
-const big_bar = document.getElementById("left_side");
-var nav_bar_active = window.matchMedia("(min-width: 800px)");
+const darkMode_Toggle = document.getElementById("dark_mode_toggle");
 var darkMode_off = false;
 var darkMode;
 
@@ -98,15 +95,20 @@ if (localStorage.getItem("dark-mode") == "dark") {
 // Toggle dark UI
 
 darkMode_Toggle.addEventListener("click", () => {
-  //   console.log("big btn pressed");
+  //   console.log("Dark mode toggle clicked");
 
   if (darkMode_off === false) {
-    // console.log("dark mode on");
+    console.log("dark mode on");
     darkMode_off = true;
 
     document.documentElement.style.setProperty("--background_color", "#182230");
     document.documentElement.style.setProperty("--dark_shades", "#182230");
     document.documentElement.style.setProperty("--primary_color", "#ecf1f3");
+
+    darkMode_Toggle.classList.remove("fa-sun");
+    darkMode_Toggle.classList.add("fa-moon");
+
+    console.log(darkMode_Toggle.classList);
 
     localStorage.setItem("dark-mode", "dark");
   } else {
@@ -115,6 +117,9 @@ darkMode_Toggle.addEventListener("click", () => {
     document.documentElement.style.setProperty("--background_color", "#e9eef1");
     document.documentElement.style.setProperty("--dark_shades", "#763a3a");
     document.documentElement.style.setProperty("--primary_color", "#102020e7");
+
+    darkMode_Toggle.classList.remove("fa-moon");
+    darkMode_Toggle.classList.add("fa-sun");
 
     localStorage.setItem("dark-mode", "light");
 
