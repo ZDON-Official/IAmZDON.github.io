@@ -1,34 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 :root {
-  /* --main_color: #c6c6c6; */
-  /* --secondary_color: #ba8721; */
-  /* --secondary_color: rgb(230, 124, 71); */
-  /* --dark_accent: #a47acb; */
-  /* --dark_accent: #ffffff; */
-  /* --dark_accent: #da3a3a; */
-  /* --dark_shades: #305256; */
-  /* --dark_shades: #458650; */
-  /* --dark_shades: #05383f; */
-  /* --BG: rgb(231, 231, 231); */
-
-  /* --main_color: #FFD700; */
-
-  --main_color: #102020e7;
+  --primary_color: #102020e7;
+  /* --primary_color: #ffffffdf; */
   --text_color: rgba(255, 255, 255, 0.7);
   /* --text_color: #102020e7; */
-  /* --main_color: #ffffffdf; */
   /* --secondary_color: rgb(150, 16, 16); */
   --secondary_color: #bfa181;
-  --dark_shades: #e9eef1; /* TODO rename this */
+  /* TODO rename this */
+  /* --dark_shades: #e9eef1; */
   --dark_shades: #763a3a;
   --background_color: #e9eef1;
+  /* --background_color: #182230; */
 
-  /* --main_color: rgb(255, 255, 255, 0.9);
-    --secondary_color: rgb(241, 137, 84);
-    --dark_accent: #a47acb;
-    --dark_shades: #305256;
-    --BG: rgb(231, 231, 231); */
+  --dark_accent: #a47acb;
 
   /** Box Shadow */
 
@@ -156,7 +141,7 @@ body {
 
 /* heading - my name */
 #name {
-  color: var(--main_color);
+  color: var(--primary_color);
   font-size: 1.8em;
   font-weight: bolder;
   margin: 0%;
@@ -223,7 +208,7 @@ body {
 }
 
 a {
-  color: var(--main_color);
+  color: var(--primary_color);
   text-decoration: none;
   padding: 0 5px;
 }
@@ -292,7 +277,7 @@ a:hover {
   padding: 0%;
   opacity: 1;
   font-weight: 900;
-  color: var(--main_color);
+  color: var(--primary_color);
 }
 
 .main_bio p {
@@ -379,7 +364,7 @@ a:hover {
 
 .nav_arrow:hover {
   cursor: pointer;
-  color: var(--main_color);
+  color: var(--primary_color);
 }
 
 .nav_arrow:active {
@@ -483,7 +468,7 @@ a:hover {
 }
 
 .prj_button a:hover {
-  color: var(--main_color);
+  color: var(--primary_color);
   text-decoration: none;
 }
 
@@ -515,7 +500,7 @@ a:hover {
   border-radius: 0.2em;
   box-sizing: border-box;
   padding: 5px 10px;
-  color: var(--main_color);
+  color: var(--primary_color);
   font-size: 16px;
   /* margin-bottom: 20px; */
 
@@ -605,7 +590,7 @@ a:hover {
 }
 
 hr {
-  border: 1px solid var(--main_color);
+  border: 1px solid var(--primary_color);
   /* background-color: var(--secondary_color); */
 }
 
@@ -716,7 +701,7 @@ hr {
 }
 
 #traffic_title a {
-  color: var(--main_color);
+  color: var(--primary_color);
 }
 #traffic_title a:hover {
   color: var(--secondary_color);
@@ -740,11 +725,11 @@ hr {
   height: 55px;
 }
 #shrink_btn:hover h1 {
-  border-bottom: 2px solid var(--main_color);
+  border-bottom: 2px solid var(--primary_color);
 }
 
 #shrink_btn h1 {
-  color: var(--main_color);
+  color: var(--primary_color);
   font-size: 28px;
   text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
   font-weight: bold;

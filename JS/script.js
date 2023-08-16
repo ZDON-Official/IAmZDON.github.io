@@ -33,11 +33,8 @@ buttons.forEach((button) => {
 // * ==========================================================================
 
 var path = window.location.pathname;
-// const fs = require('fs');
-// var img = fs.readdirSync('/gallery_assets/')
 console.log(path);
 if (path === "/HTML/gallery.html") {
-
   //! this for looping through the images
   const images = document.querySelectorAll("[data-pic]");
   let i = 0;
@@ -93,17 +90,9 @@ if (localStorage.getItem("dark-mode")) {
 localStorage.setItem("dark-mode", darkMode);
 
 if (localStorage.getItem("dark-mode") == "dark") {
-  // if the above is 'dark' then apply .dark to the body
-  // document.body.classList.add("dark");
-
-  document.documentElement.style.setProperty("--BG", "rgb(33, 36, 53)");
-  document.documentElement.style.setProperty("--dark_shades", "#05383f");
-
-  //! hide the 'dark' button
-  // $('.dark-button').hide();
-
-  //! show the 'light' button
-  // $('.light-button').show();
+  document.documentElement.style.setProperty("--background_color", "#182230");
+  document.documentElement.style.setProperty("--dark_shades", "#182230");
+  document.documentElement.style.setProperty("--primary_color", "#ecf1f3");
 }
 
 // Toggle dark UI
@@ -115,26 +104,18 @@ darkMode_Toggle.addEventListener("click", () => {
     // console.log("dark mode on");
     darkMode_off = true;
 
-    document.documentElement.style.setProperty(
-      "--background_color",
-      "rgb(33, 36, 53)"
-    );
-    document.documentElement.style.setProperty("--dark_shades", "#05383f");
-    document.documentElement.style.setProperty("--main_color", "#ecf1f3");
+    document.documentElement.style.setProperty("--background_color", "#182230");
+    document.documentElement.style.setProperty("--dark_shades", "#182230");
+    document.documentElement.style.setProperty("--primary_color", "#ecf1f3");
 
-    // document.body.classList.add("dark");
     localStorage.setItem("dark-mode", "dark");
   } else {
     // console.log("dark mode off");
 
-    document.documentElement.style.setProperty(
-      "--background_color",
-      "rgb(255, 255, 255)"
-    );
-    document.documentElement.style.setProperty("--dark_shades", "#ecf1f3");
-    document.documentElement.style.setProperty("--main_color", "#142727df");
+    document.documentElement.style.setProperty("--background_color", "#e9eef1");
+    document.documentElement.style.setProperty("--dark_shades", "#763a3a");
+    document.documentElement.style.setProperty("--primary_color", "#102020e7");
 
-    // document.body.classList.remove("dark");
     localStorage.setItem("dark-mode", "light");
 
     darkMode_off = false;
