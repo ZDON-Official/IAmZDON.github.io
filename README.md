@@ -39,5 +39,5 @@
   * test it more
 * Rename some of the classes names
 * ~~add horizontal scroll to resume page when needed~~
-* compress images
-* change main bio image
+* ~~compress images~~
+* ~~change main bio image~~
