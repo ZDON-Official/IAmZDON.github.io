@@ -109,7 +109,6 @@ if (localStorage.getItem("dark-mode") == "dark") {
   }
 }
 
-
 // Toggle dark UI
 
 darkMode_Toggle.addEventListener("click", () => {
@@ -120,7 +119,7 @@ darkMode_Toggle.addEventListener("click", () => {
     darkMode_on = true;
 
     document.documentElement.style.setProperty("--background_color", "#182230");
-    document.documentElement.style.setProperty("--dark_shades", "#182230");
+    document.documentElement.style.setProperty("--dark_shades", "transparent");
     document.documentElement.style.setProperty("--primary_color", "#ecf1f3");
 
     darkMode_Toggle.classList.remove("fa-sun");
