@@ -42,3 +42,4 @@
 * ~~compress images~~
 * ~~change main bio image~~
 * ~~Add a better dark mode toggle button~~
+* **Fix dark mode on mobile**
