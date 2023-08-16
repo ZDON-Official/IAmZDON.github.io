@@ -17,9 +17,12 @@
 
   /** Box Shadow */
 
-  --box-shadow: 0.6px 2.2px 4.8px rgba(0, 0, 0, 0.046),
-    1.5px 6px 7.1px rgba(0, 0, 0, 0.168),
-    2.9px 11.7px 11.8px rgba(0, 0, 0, 0.335), 5px 20px 60px rgba(0, 0, 0, 0.5);
+  --box-shadow:
+  0.6px 1.2px 1.4px -3px rgba(0, 0, 0, 0.156),
+  2px 4.1px 3.9px -3px rgba(0, 0, 0, 0.228),
+  5.1px 10.2px 9.3px -3px rgba(0, 0, 0, 0.288),
+  10px 20px 31px -3px rgba(0, 0, 0, 0.35)
+;
 }
 
 /* ::selection {
