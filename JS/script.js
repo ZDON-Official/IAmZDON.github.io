@@ -75,7 +75,7 @@ date.innerText = cur_year;
 
 const darkMode_Toggle = document.getElementById("dark_mode_toggle");
 var mobile_screen = window.matchMedia("(max-width: 767px)");
-var darkMode_off = false;
+var darkMode_on;
 var darkMode; // <------ Save this in local storage too
 
 if (localStorage.getItem("dark-mode")) {
@@ -85,7 +85,16 @@ if (localStorage.getItem("dark-mode")) {
   darkMode = "light";
 }
 
+if (localStorage.getItem("darkMode_toggle")) {
+  console.log("dark mode is on");
+  darkMode_on = JSON.parse(localStorage.getItem("darkMode_toggle"));
+} else {
+  console.log("dark mode is off");
+  darkMode_on = false;
+}
+
 localStorage.setItem("dark-mode", darkMode);
+localStorage.setItem("darkMode-toggle", darkMode_on);
 
 if (localStorage.getItem("dark-mode") == "dark") {
   document.documentElement.style.setProperty("--background_color", "#182230");
@@ -100,14 +109,15 @@ if (localStorage.getItem("dark-mode") == "dark") {
   }
 }
 
+
 // Toggle dark UI
 
 darkMode_Toggle.addEventListener("click", () => {
-  //   console.log("Dark mode toggle clicked");
+  console.log("Dark mode button clicked");
 
-  if (darkMode_off === false) {
+  if (darkMode_on === false) {
     console.log("dark mode on");
-    darkMode_off = true;
+    darkMode_on = true;
 
     document.documentElement.style.setProperty("--background_color", "#182230");
     document.documentElement.style.setProperty("--dark_shades", "#182230");
@@ -123,6 +133,7 @@ darkMode_Toggle.addEventListener("click", () => {
     }
 
     localStorage.setItem("dark-mode", "dark");
+    localStorage.setItem("darkMode_toggle", darkMode_on);
   } else {
     // console.log("dark mode off");
 
@@ -137,8 +148,12 @@ darkMode_Toggle.addEventListener("click", () => {
       document.documentElement.style.setProperty("--text_color", "#102020e7");
     }
 
-    localStorage.setItem("dark-mode", "light");
+    darkMode_on = false;
 
-    darkMode_off = false;
+    localStorage.setItem("dark-mode", "light");
+    localStorage.setItem("darkMode_toggle", darkMode_on);
   }
+
+  console.log(darkMode_on);
+  console.log(`toggle is ${JSON.parse(darkMode_on)}`);
 });
