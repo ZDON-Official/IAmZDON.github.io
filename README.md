@@ -26,7 +26,7 @@
   * ~~make left bar font responsive~~
   * !! MAKE Font responsive
 * Fix gallery
-* Add dark mode support
+* ~~Add dark mode support~~
   * ~~turns off when navigating to new page (Fixed)~~
   * ~~update dark mode colors~~
   * ~~play around with the color palette~~
@@ -41,4 +41,4 @@
 * ~~add horizontal scroll to resume page when needed~~
 * ~~compress images~~
 * ~~change main bio image~~
-* Add a better dark mode toggle button
+* ~~Add a better dark mode toggle button~~
