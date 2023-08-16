@@ -2,37 +2,37 @@ const project_list = `[
     {
         "title" : "Audio Visualization",
         "info"  : "This project is an audio visualizer using the P5.js framework. This was implemented by Zohiab and Rinki.",
-        "image" : "/Assets/audio_playing.png",
+        "image" : "/Assets/audio_playing.jpeg",
         "link"  : "https://github.com/ZDON-Official/Audio-Visualization"
     },
     {
         "title" : "Processor Simulator",
         "info"  : "This project is a computer simulation which uses logisim to simulate a working processor and other I/O devices, This was implemented by Zohaib and Ying.",
-        "image" : "/Assets/Processor.png",
+        "image" : "/Assets/Processor.jpeg",
         "link"  : "https://github.com/ZDON-Official/Processor-Simulator"
     },
     {
         "title" : "MIPS Assembler",
         "info"  : "This project converts MIPS instructions into binary to be used by a processor simulator. The project is implemented in C++.",
-        "image" : "/Assets/mips_assembler.png",
+        "image" : "/Assets/mips_assembler.jpeg",
         "link"  : "https://github.com/ZDON-Official/MIPS-Assembler"
     },
     {
         "title" : "Ultimate Tic-Tac-Toe",
         "info"  : "This project is an implementation of Ultimate Tic-Tac-Toe in Python. This game utilizes the Pygame Python library to implement music and visuals.",
-        "image" : "/Assets/ultimate.png",
+        "image" : "/Assets/ultimate.jpeg",
         "link"  : "https://github.com/ZDON-Official/UltimateTicTacToe"
     },
     {
         "title" : "Spydur Research",
         "info"  : "In this project, my team and I designed a website for finding research opportunities on campus. Our main goal was to streamline the process of finding and applying to research opportunities.",
-        "image" : "/Assets/Spydur_research.png",
+        "image" : "/Assets/Spydur_research.jpeg",
         "link"  : "https://github.com/ZDON-Official/Spydur_research"
     },
     {
         "title" : "Discord Invest",
         "info"  : "Final submission for GryphHacks 2022. The goal of this project was to create a mock trading Discord bot.",
-        "image" : "/Assets/DInvestLogo.png",
+        "image" : "/Assets/DInvestLogo.jpeg",
         "link"  : "https://github.com/ZDON-Official/DiscordInvest"
     },
     {
@@ -44,13 +44,13 @@ const project_list = `[
     {
         "title" : "ODIN Landing Page",
         "info"  : "Implementation of a website landing page template, for ODIN Project, using HTML and CSS.",
-        "image" : "/Assets/ODIN_Landing_page.png",
+        "image" : "/Assets/ODIN_Landing_page.jpeg",
         "link"  : "https://github.com/ZDON-Official/Odin-Landing-Page"
     },
     {
         "title" : "Portfolio Website",
         "info"  : "This is my personal portfolio website created using HTML, CSS, and Javascript.",
-        "image" : "/Assets/ZDON_Portfolio_website.png",
+        "image" : "/Assets/ZDON_Portfolio_website.jpeg",
         "link"  : "https://github.com/ZDON-Official/ZDON-Official.github.io"
     }
 ]`;
