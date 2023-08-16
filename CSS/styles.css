@@ -1124,7 +1124,7 @@ hr {
 
 /* This code is for really small mobile screen (ex - galaxy fold) */
 /* TODO - add more */
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 380px) {
   .page_title {
     font-size: 2.5em;
   }
