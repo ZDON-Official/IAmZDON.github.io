@@ -37,16 +37,6 @@ var path = window.location.pathname;
 // var img = fs.readdirSync('/gallery_assets/')
 console.log(path);
 if (path === "/HTML/gallery.html") {
-  //! this is for loading new images into the div
-  // var fs = require('fs');
-  // var img = fs.readdirSync('/gallery_assets/')
-
-  // const cur_img = document.que('img')
-  // let pic_ctn = document.getElementsByClassName('pic-ctn')
-
-  // img.forEach(pic => {
-  //     console.log(`file name ${pic}`)
-  // })
 
   //! this for looping through the images
   const images = document.querySelectorAll("[data-pic]");
@@ -81,53 +71,6 @@ var date = document.getElementById("date");
 let cur_year = new Date().getFullYear();
 
 date.innerText = cur_year;
-
-// * ==========================================================================
-// ! This is code for navbar
-// * ==========================================================================
-
-// const nav_bar = document.getElementById("shrink_btn")
-
-// navBarFunction(nav_bar_active)
-// nav_bar_active.addEventListener("change", navBarFunction)
-
-// nav_bar.addEventListener("click", () => {
-//     console.log('btn pressed')
-
-//     if(theme_off === false){
-//         theme_off = true
-//         document.documentElement.style.setProperty('--BG', 'rgb(33, 36, 53)');
-//         document.documentElement.style.setProperty('--dark_shades', '#05383f');
-//     }else{
-//         document.documentElement.style.setProperty('--BG', 'rgb(231, 231, 231)');
-//         document.documentElement.style.setProperty('--dark_shades', '#305256');
-
-//         theme_off = false
-//     }
-// })
-
-// nav_bar_big.addEventListener("click", () => {
-//     console.log('big btn pressed')
-//     if(theme_off === false){
-//         theme_off = true
-//         document.documentElement.style.setProperty('--BG', 'rgb(33, 36, 53)');
-//         document.documentElement.style.setProperty('--dark_shades', '#05383f');
-//     }else{
-//         document.documentElement.style.setProperty('--BG', 'rgb(231, 231, 231)');
-//         document.documentElement.style.setProperty('--dark_shades', '#305256');
-
-//         theme_off = false
-//     }
-// })
-
-// var auto_hide = window.matchMedia("max-width: 600px")
-
-// function autoHide(x){
-//     big_bar.style.display = "none"
-//     small_bar.style.display = "flex"
-// }
-// autoHide(auto_hide)
-// auto_hide.addEventListener("change", autoHide)
 
 //* =================================================================================================
 //! THIS CODE IS FOR DARK MODE ACROSS THE DIFFERENT PAGES
@@ -190,7 +133,6 @@ darkMode_Toggle.addEventListener("click", () => {
     );
     document.documentElement.style.setProperty("--dark_shades", "#ecf1f3");
     document.documentElement.style.setProperty("--main_color", "#142727df");
-
 
     // document.body.classList.remove("dark");
     localStorage.setItem("dark-mode", "light");
