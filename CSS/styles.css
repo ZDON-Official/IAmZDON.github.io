@@ -911,8 +911,8 @@ hr {
 
   .main_bio {
     flex-direction: column;
-    min-height: 70vh;
-    max-height: 70vh;
+    min-height: 60vh;
+    max-height: 60vh;
     width: 90vw;
     margin: 5% 0% 5% 0%;
     padding: 0%;
