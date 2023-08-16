@@ -74,8 +74,9 @@ date.innerText = cur_year;
 //* =================================================================================================
 
 const darkMode_Toggle = document.getElementById("dark_mode_toggle");
+var mobile_screen = window.matchMedia("(max-width: 767px)");
 var darkMode_off = false;
-var darkMode;
+var darkMode; // <------ Save this in local storage too
 
 if (localStorage.getItem("dark-mode")) {
   // if dark mode is in storage, set variable with that value
@@ -90,6 +91,13 @@ if (localStorage.getItem("dark-mode") == "dark") {
   document.documentElement.style.setProperty("--background_color", "#182230");
   document.documentElement.style.setProperty("--dark_shades", "#182230");
   document.documentElement.style.setProperty("--primary_color", "#ecf1f3");
+
+  darkMode_Toggle.classList.remove("fa-sun");
+  darkMode_Toggle.classList.add("fa-moon");
+
+  if (mobile_screen.matches) {
+    document.documentElement.style.setProperty("--text_color", "#e9eef1");
+  }
 }
 
 // Toggle dark UI
@@ -110,6 +118,10 @@ darkMode_Toggle.addEventListener("click", () => {
 
     console.log(darkMode_Toggle.classList);
 
+    if (mobile_screen.matches) {
+      document.documentElement.style.setProperty("--text_color", "#e9eef1");
+    }
+
     localStorage.setItem("dark-mode", "dark");
   } else {
     // console.log("dark mode off");
@@ -120,6 +132,10 @@ darkMode_Toggle.addEventListener("click", () => {
 
     darkMode_Toggle.classList.remove("fa-moon");
     darkMode_Toggle.classList.add("fa-sun");
+
+    if (mobile_screen.matches) {
+      document.documentElement.style.setProperty("--text_color", "#102020e7");
+    }
 
     localStorage.setItem("dark-mode", "light");
 

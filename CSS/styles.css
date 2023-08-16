@@ -759,6 +759,7 @@ hr {
 @media screen and (max-width: 767px) {
   :root {
     --text_color: #102020e7;
+    --mobile_dark_shade: #763a3a;
   }
   body {
     margin: 0;
@@ -804,7 +805,7 @@ hr {
     /* background-color: maroon; */
   }
 
-  #left_side_small .Links_small {
+  .Links_small {
     margin: 0%;
     padding: 0%;
     /* justify-content: space-evenly; */
@@ -815,6 +816,18 @@ hr {
     align-items: center;
     width: 100%;
   }
+
+  /*! ================================================================= */
+  /*! ================================================================= */
+  /*              TODO figure this out */
+
+  .link_btn_small{
+    /* color: var(--mobile_dark_shade); */
+  }
+
+  /*! ================================================================= */
+  /*! ================================================================= */
+
 
   #left_side_small .link_btn_small {
     margin: 0%;
@@ -932,7 +945,7 @@ hr {
     margin: 0%;
     padding: 0%;
     margin-bottom: 2px;
-    color: var(--dark_shades);
+    color: var(--mobile_dark_shade);
     /* border: 2px solid red; */
   }
 
@@ -949,11 +962,13 @@ hr {
 
     justify-content: space-between;
     align-items: center;
+    color: var(--mobile_dark_shade);
+
     /* border: 2px solid red; */
   }
 
   #mobile_socials * {
-    color: var(--dark_shades);
+    color: var(--mobile_dark_shade);
   }
 
   /*! Resume page */
@@ -982,7 +997,7 @@ hr {
 
   .sec_title {
     font-size: 1.5rem;
-    color: var(--dark_shades);
+    color: var(--mobile_dark_shade);
   }
 
   .sec_bottom {
@@ -998,10 +1013,11 @@ hr {
 
   .nav_arrow {
     top: 50vh;
-    color: var(--dark_shades);
+    color: var(--mobile_dark_shade);
   }
 
-  .nav_arrow:hover {
+
+  .nav_arrow:focus {
     color: var(--secondary_color);
   }
 
@@ -1036,7 +1052,7 @@ hr {
 
   .prj_top h2 {
     font-weight: bold;
-    color: var(--dark_shades);
+    color: var(--mobile_dark_shade);
   }
 
   .prj_img {
