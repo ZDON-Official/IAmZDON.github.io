@@ -42,6 +42,6 @@
 * ~~compress images~~
 * ~~change main bio image~~
 * ~~Add a better dark mode toggle button~~
-* **Fix dark mode on mobile**
-* dark mode toggle should change to reflect current setting when changing pages
-  * save dark mode toggle variable in local storage 
+* ~~Fix dark mode on mobile~~
+* ~~dark mode toggle should change to reflect current setting when changing pages~~
+  * ~~save dark mode toggle variable in local storage~~
