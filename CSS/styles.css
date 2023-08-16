@@ -911,8 +911,8 @@ hr {
 
   .main_bio {
     flex-direction: column;
-    min-height: 60vh;
-    max-height: 60vh;
+    min-height: 70svh;
+    max-height: 70svh;
     width: 90vw;
     margin: 5% 0% 5% 0%;
     padding: 0%;
@@ -920,7 +920,7 @@ hr {
     align-items: center;
     /* justify-content: space-between; */
     background-color: var(--background_color);
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 
   .main_bio p {
