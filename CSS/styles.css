@@ -158,6 +158,11 @@ body {
   color: var(--primary_color);
 }
 
+#dark_mode_toggle:active {
+  /* border-bottom: 2px solid var(--main_color); */
+  color: var(--secondary_color);
+}
+
 /*
 ================================================================
 */
@@ -892,12 +897,22 @@ hr {
     height: 100%;
   }
 
+  #dark_mode_toggle:active {
+    /* border-bottom: 2px solid var(--main_color); */
+    color: var(--secondary_color);
+  }
+
+  #dark_mode_toggle:focus {
+    /* border-bottom: 2px solid var(--main_color); */
+    color: var(--secondary_color);
+  }
+
   /* About page */
 
   .main_bio {
     flex-direction: column;
-    min-height: 65vh;
-    max-height: 75vh;
+    min-height: 70vh;
+    max-height: 70vh;
     width: 90vw;
     margin: 5% 0% 5% 0%;
     padding: 0%;
@@ -1018,7 +1033,11 @@ hr {
 
 
   .nav_arrow:focus {
-    color: var(--secondary_color);
+    color: var(--mobile_dark_shade);
+  }
+
+  .nav_arrow:active {
+    color: var(--mobile_dark_shade);
   }
 
   #prj_left_arr {
@@ -1105,7 +1124,7 @@ hr {
 
 /* This code is for really small mobile screen (ex - galaxy fold) */
 /* TODO - add more */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 391px) {
   .page_title {
     font-size: 2.5em;
   }
