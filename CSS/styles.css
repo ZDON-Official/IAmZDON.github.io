@@ -830,10 +830,6 @@ hr {
     text-decoration: none;
   }
 
-  #Cur_page_small {
-    /* color: var(--background_color); */
-  }
-
   #left_side_small .socials {
     display: flex;
     /* flex-direction: column; */
@@ -980,8 +976,7 @@ hr {
     color: var(--dark_shades);
   }
 
-  .nav_arrow:hover,
-  :active {
+  .nav_arrow:hover {
     color: var(--secondary_color);
   }
 
