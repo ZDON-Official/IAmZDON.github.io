@@ -54,6 +54,12 @@ const project_list = `[
         "link"  : "https://github.com/ZDON-Official/ZDON-Official.github.io"
     },
     {
+        "title" : "ODIN Rock Paper Scissors",
+        "info"  : "This is an implementation of a Rock, Paper, Scissors game using HTML, CSS, and Javascript.",
+        "image" : "/Assets/ODIN-Rock-Paper-Scissor.jpeg",
+        "link"  : "https://zdon-official.github.io/Odin-Rock-Paper-Scissors/"
+    },
+    {
         "title" : "ODIN Etch-a-Sketch",
         "info"  : "Etch-a-Sketch for The ODIN Project. This project utilizes HTML, CSS, and Javascript.",
         "image" : "/Assets/ODIN-Etch-a-Sketch.jpeg",
