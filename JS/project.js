@@ -52,6 +52,12 @@ const project_list = `[
         "info"  : "This is my personal portfolio website created using HTML, CSS, and Javascript.",
         "image" : "/Assets/ZDON_Portfolio_website.jpeg",
         "link"  : "https://github.com/ZDON-Official/ZDON-Official.github.io"
+    },
+    {
+        "title" : "ODIN Etch-a-Sketch",
+        "info"  : "Etch-a-Sketch for The ODIN Project. This project utilizes HTML, CSS, and Javascript.",
+        "image" : "/Assets/ODIN-Etch-a-Sketch.jpeg",
+        "link"  : "https://zdon-official.github.io/Odin-Etch-a-Sketch/"
     }
 ]`;
 
