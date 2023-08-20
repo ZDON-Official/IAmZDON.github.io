@@ -618,7 +618,7 @@ hr {
 /*!------------------------------------------------------------------------------- */
 
 #gallery {
-  resize: none;
+  /* resize: none; */
   /* border: 4px solid gold; */
   margin-left: 10px;
 }
@@ -635,8 +635,8 @@ hr {
   padding: 15px 20px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(8, 15vw);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 20vw);
 
   grid-gap: 14px;
 
@@ -850,13 +850,6 @@ hr {
   }
 
   /*! ================================================================= */
-  /*! ================================================================= */
-  /*              TODO figure this out */
-
-  .link_btn_small{
-    /* color: var(--mobile_dark_shade); */
-  }
-
   /*! ================================================================= */
   /*! ================================================================= */
 
@@ -1113,6 +1106,16 @@ hr {
   .prj_empty_div {
     min-height: 10em;
   }
+
+
+  .pic-ctn{
+    width: 90vw;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 35vw);
+  }
+
+
 }
 
 /*! ================================================================= */
