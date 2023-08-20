@@ -32,32 +32,32 @@ buttons.forEach((button) => {
 // ! This is code for the gallery
 // * ==========================================================================
 
-var path = window.location.pathname;
-console.log(path);
-if (path === "/HTML/gallery.html") {
-  //! this for looping through the images
-  const images = document.querySelectorAll("[data-pic]");
-  let i = 0;
+// var path = window.location.pathname;
+// console.log(path);
+// if (path === "/HTML/gallery.html") {
+//   //! this for looping through the images
+//   const images = document.querySelectorAll("[data-pic]");
+//   let i = 0;
 
-  setInterval(function () {
-    console.log("in timeout");
-    if (i == 0) {
-      images[i].className = "fade-in-image";
-    } else if (i == images.length) {
-      images[i - 1].className = "fade-out-image";
-      images[0].className = "fade-in-image";
-      i = 0;
-    } else {
-      images[i - 1].className = "fade-out-image";
-      images[i].className = "fade-in-image";
-    }
+//   setInterval(function () {
+//     console.log("in timeout");
+//     if (i == 0) {
+//       images[i].className = "fade-in-image";
+//     } else if (i == images.length) {
+//       images[i - 1].className = "fade-out-image";
+//       images[0].className = "fade-in-image";
+//       i = 0;
+//     } else {
+//       images[i - 1].className = "fade-out-image";
+//       images[i].className = "fade-in-image";
+//     }
 
-    i++;
-  }, 2000);
-} else {
-  console.log("clear timeout");
-  clearInterval();
-}
+//     i++;
+//   }, 2000);
+// } else {
+//   console.log("clear timeout");
+//   clearInterval();
+// }
 
 // * ==========================================================================
 // ! This is code for displaying current year next to copyright
