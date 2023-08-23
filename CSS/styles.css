@@ -438,7 +438,7 @@ a:hover {
   background-color: var(--dark_shades);
   /* color: var(--main_color); */
   margin-top: 2%;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.75);
+  /* box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.75); */
   box-shadow: var(--box-shadow);
   height: 60vh;
 
