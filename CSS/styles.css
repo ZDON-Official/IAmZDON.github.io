@@ -94,8 +94,8 @@ body {
   height: 100vh;
 
   /*! Maybe change this, make it more responsive */
-  min-width: 10em;
-  max-width: 30em;
+  min-width: 15em;
+  max-width: 35em;
   margin: 0%;
   padding: 20px 0px;
   padding-bottom: 0%;
@@ -177,7 +177,7 @@ body {
 /* heading - my name */
 #name {
   color: var(--primary_color);
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: bolder;
   margin: 0%;
   padding: 0%;
@@ -187,7 +187,7 @@ body {
 .Header_sec h4 {
   /* opacity: 90%; */
   color: var(--secondary_color);
-  opacity: 0.7;
+  opacity: 0.8;
   font-size: 1em;
   font-weight: lighter;
   margin: 0%;
@@ -237,14 +237,14 @@ a:hover {
   text-align: center;
   color: var(--secondary_color);
   margin-bottom: 0.5em;
-  font-size: 0.95em;
+  font-size: 1em;
   font-weight: 500;
   width: 100%;
   /* border: 2px solid black; */
 }
 
 .copyright {
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: lighter;
   margin: 0%;
   margin-top: 5px;
@@ -271,17 +271,51 @@ a:hover {
   width: 60vw;
   height: 60vh;
   display: flex;
-  background-color: var(--dark_shades);
+  /* background-color: var(--dark_shades); */
 
   justify-content: space-between;
   border-radius: 0.2em;
 
-  box-shadow: 0px 10px 25px rgba(0, 0, 0);
-  box-shadow: var(--box-shadow);
+  /* box-shadow: 0px 10px 25px rgba(0, 0, 0); */
+  /* box-shadow: var(--box-shadow); */
 
   flex-shrink: 1;
 
   /* border: 2px solid red; */
+}
+
+.bio_text{
+  /* border: solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+  padding-right: 30px;
+}
+
+.desktop_social{
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop_social a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--secondary_color);
+  color: var(--secondary_color);
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.desktop_social a:hover{
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--secondary_color);
+  color: var(--background_color);
 }
 
 #hello {
@@ -298,8 +332,8 @@ a:hover {
   flex-direction: column;
   font-size: 1em;
   font-weight: lighter;
-  padding: 0.5em;
-  margin-right: 1em;
+  /* padding: 0.5em; */
+  /* margin-right: 1em; */
   /* color: var(--dark_accent); */
 
   color: var(--secondary_color);
@@ -312,22 +346,23 @@ a:hover {
 
 .rect {
   min-width: 50%;
-  max-width: 60%;
+  max-width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 1;
+
 }
 
 .about_img {
   max-height: 80%;
   max-width: 90%;
-  margin: 1.5em;
+  /* margin: 1.5em; */
   border-radius: 0.2em;
   align-items: center;
   object-fit: scale-down;
-  /* box-shadow: 0px 0.1em 1em rgba(0, 0, 0, 0.4); */
-  border: 0.1em solid var(--secondary_color);
+  box-shadow: var(--box-shadow);
+  /* border: 0.1em solid var(--secondary_color); */
 }
 /*!------------------------------------------------------------------------------- */
 
