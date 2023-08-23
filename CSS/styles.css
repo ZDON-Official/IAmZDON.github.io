@@ -656,12 +656,14 @@ hr {
   /* resize: none; */
   /* border: 4px solid gold; */
   margin-left: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 /*  code from - https://softauthor.com/javascript-image-slider-slideshow-carousel/ */
 .pic-ctn {
   /* position: relative; */
-  width: 860px;
+  width: 80%;
   height: 70vh;
   background-color: var(--dark_shades);
   border-radius: 0.2em;
