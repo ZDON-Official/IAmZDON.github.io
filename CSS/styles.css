@@ -1182,7 +1182,7 @@ hr {
 
 
   #gallery{
-    border: solid;
+    /* border: solid; */
     max-height: 65vh;
   }
 
