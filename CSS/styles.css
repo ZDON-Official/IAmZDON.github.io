@@ -25,37 +25,6 @@
 ;
 }
 
-/* ::selection {
-  background-color: rgb(114, 60, 114);
-} */
-
-/*! ===========================================================================  */
-/*
-    # TODO - make the website respond to screen size
-
-    # TODO EX. make project image disappear if window is too small
-
-    # TODO - fix some sections and font size when window is small
-
-    TODO - make it support different screen sizes
-    TODO    - work on resume and gallery page
-    TODO    - make it support phone screens
-    TODO    - play around with about page (photo on left, bio on right etc)
-    TODO    - make left bar font responsive
-
-    TODO - Fix gallery
-
-    # TODO - add support for dark mode
-
-    # TODO - dark mode turns of when navigating to a different page
-
-    TODO - rename dark mode button
-
-    TODO - add a dark mode button
-
-    TODO - dark mode colors
-*/
-
 /*! ===========================================================================  */
 
 /*!  THIS IS ONLY FOR TESTING */
@@ -270,13 +239,13 @@ a:hover {
 .main_bio {
   box-sizing: border-box;
   /* width: max-content; */
-  min-width: 60vw;
-  max-width: 60vw;
+  min-width: 50vw;
+  max-width: 50vw;
   height: 65vh;
   display: flex;
   /* background-color: var(--dark_shades); */
 
-  justify-content: space-between;
+  justify-content: center;
   border-radius: 0.2em;
 
   /* box-shadow: 0px 10px 25px rgba(0, 0, 0); */
@@ -291,22 +260,25 @@ a:hover {
 
 .bio_text{
   box-sizing: border-box;
-  max-width: 60%;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0%;
   padding: 0%;
-  padding-right: 30px;
+  /* padding-right: 30px; */
+
+  /* border: solid; */
 }
 
 .desktop_social{
   box-sizing: border-box;
-  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  width: 100%;
   margin: 0%;
   padding-top: 15px;
-  display: flex;
-  justify-content: space-between;
   /* border: solid; */
 }
 
@@ -318,10 +290,10 @@ a:hover {
   justify-content: center;
   border: 2px solid var(--secondary_color);
   color: var(--secondary_color);
-  width: 5em;
+  width: 6em;
   height: 40px;
   border-radius: 4px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5); */
 }
 
 .desktop_social a:hover{
@@ -343,7 +315,7 @@ a:hover {
 .main_bio p {
   display: flex;
   flex-direction: column;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: lighter;
   margin: 0%;
   /* padding: 0.5em; */
@@ -986,7 +958,7 @@ hr {
   .main_bio {
     flex-direction: column;
     height: 65svh;
-    width: 90vw;
+    min-width: 90vw;
     margin: 5% 0% 5% 0%;
     padding: 0%;
     /* margin-bottom: 10%; */
