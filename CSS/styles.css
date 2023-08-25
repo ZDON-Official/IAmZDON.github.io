@@ -1045,7 +1045,7 @@ hr {
   /*! Resume page */
 
   #resume_container {
-    width: 90vw;
+    min-width: 90vw;
     height: 65svh;
     background-color: var(--background_color);
     /* border: 2px solid red; */
@@ -1067,11 +1067,17 @@ hr {
   }
 
   .sec_title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--mobile_dark_shade);
   }
 
+  .sec_top{
+    font-size: 16px;
+  }
+
+  /* TODO - maybe change the font */
   .sec_bottom {
+    font-size: 12px;
     box-sizing: border-box;
     width: 100%;
   }
@@ -1148,14 +1154,25 @@ hr {
   .pic-ctn{
     width: 90vw;
     height: 65vh;
+    background-color: transparent;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 35vw);
+    grid-gap: 20px;
   }
 
+  .pic-ctn::-webkit-scrollbar{
+    display: none;
+  }
+
+  .pic-ctn img{
+    /* box-shadow: none; */
+    border-radius: 8px;
+  }
 
   #gallery{
     /* border: solid; */
     max-height: 65vh;
+    background-color: transparent;
   }
 
 }
