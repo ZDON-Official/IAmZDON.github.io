@@ -98,15 +98,22 @@ localStorage.setItem("darkMode-toggle", darkMode_on);
 
 if (localStorage.getItem("dark-mode") == "dark") {
   document.documentElement.style.setProperty("--background_color", "#182230");
-  document.documentElement.style.setProperty("--dark_shades", "#182230");
-  document.documentElement.style.setProperty("--primary_color", "#ecf1f3");
-
+  document.documentElement.style.setProperty("--dark_shades", "transparent");
+  document.documentElement.style.setProperty("--secondary_color", "#bfa181");
+  document.documentElement.style.setProperty(
+    "--primary_color",
+    "rgba(255, 255, 255, 0.7)"
+  );
+  document.documentElement.style.setProperty(
+    "--text_color",
+    "rgba(255, 255, 255, 0.7)"
+  );
   darkMode_Toggle.classList.remove("fa-sun");
   darkMode_Toggle.classList.add("fa-moon");
 
-  if (mobile_screen.matches) {
-    document.documentElement.style.setProperty("--text_color", "#e9eef1");
-  }
+  // if (mobile_screen.matches) {
+  //   document.documentElement.style.setProperty("--text_color", "rgba(255, 255, 255, 0.7)");
+  // }
 }
 
 // Toggle dark UI
@@ -120,16 +127,24 @@ darkMode_Toggle.addEventListener("click", () => {
 
     document.documentElement.style.setProperty("--background_color", "#182230");
     document.documentElement.style.setProperty("--dark_shades", "transparent");
-    document.documentElement.style.setProperty("--primary_color", "#ecf1f3");
+    document.documentElement.style.setProperty("--secondary_color", "#bfa181");
+    document.documentElement.style.setProperty(
+      "--primary_color",
+      "rgba(255, 255, 255, 0.7)"
+    );
+    document.documentElement.style.setProperty(
+      "--text_color",
+      "rgba(255, 255, 255, 0.7)"
+    );
 
     darkMode_Toggle.classList.remove("fa-sun");
     darkMode_Toggle.classList.add("fa-moon");
 
     console.log(darkMode_Toggle.classList);
 
-    if (mobile_screen.matches) {
-      document.documentElement.style.setProperty("--text_color", "#e9eef1");
-    }
+    // if (mobile_screen.matches) {
+    //   document.documentElement.style.setProperty("--text_color", "#e9eef1");
+    // }
 
     localStorage.setItem("dark-mode", "dark");
     localStorage.setItem("darkMode_toggle", darkMode_on);
@@ -137,15 +152,17 @@ darkMode_Toggle.addEventListener("click", () => {
     // console.log("dark mode off");
 
     document.documentElement.style.setProperty("--background_color", "#e9eef1");
-    document.documentElement.style.setProperty("--dark_shades", "#763a3a");
+    document.documentElement.style.setProperty("--dark_shades", "#e9eef1");
     document.documentElement.style.setProperty("--primary_color", "#102020e7");
+    document.documentElement.style.setProperty("--secondary_color", "#763a3a");
+    document.documentElement.style.setProperty("--text_color", "#102020e7");
 
     darkMode_Toggle.classList.remove("fa-moon");
     darkMode_Toggle.classList.add("fa-sun");
 
-    if (mobile_screen.matches) {
-      document.documentElement.style.setProperty("--text_color", "#102020e7");
-    }
+    // if (mobile_screen.matches) {
+    //   document.documentElement.style.setProperty("--text_color", "#102020e7");
+    // }
 
     darkMode_on = false;
 

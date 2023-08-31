@@ -3,17 +3,18 @@
 :root {
   --primary_color: #102020e7;
   /* --primary_color: #ffffffdf; */
-  --text_color: rgba(255, 255, 255, 0.7);
-  /* --text_color: #102020e7; */
+  /* --text_color: rgba(255, 255, 255, 0.7); */
+  --text_color: #102020e7;
   /* --secondary_color: rgb(150, 16, 16); */
-  --secondary_color: #bfa181;
+  /* --secondary_color: #bfa181; */
+  --secondary_color: #763a3a;
   /* TODO rename this */
-  /* --dark_shades: #e9eef1; */
-  --dark_shades: #763a3a;
+  /* --dark_shades: #763a3a; */
+  --dark_shades: #e9eef1;
   --background_color: #e9eef1;
   /* --background_color: #182230; */
 
-  --dark_accent: #a47acb;
+  /* --dark_accent: #a47acb; */
 
   /** Box Shadow */
 
@@ -37,6 +38,7 @@ div {
 
 body {
   background-color: var(--background_color);
+  color: var(--primary_color);
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   padding: 0%;
@@ -601,6 +603,7 @@ a:hover {
   text-align: left;
   padding-left: 1em;
   margin: 0.4em 0;
+  color: var(--text_color);
 }
 
 .sec_list li::before {
@@ -817,7 +820,7 @@ hr {
 @media screen and (max-width: 767px) {
   :root {
     --text_color: #102020e7;
-    --mobile_dark_shade: #763a3a;
+    /* --mobile_dark_shade: #763a3a; */
   }
   body {
     margin: 0;
@@ -1012,7 +1015,7 @@ hr {
     margin: 0%;
     padding: 0%;
     margin-bottom: 2px;
-    color: var(--mobile_dark_shade);
+    color: var(--secondary_color);
     /* border: 2px solid red; */
   }
 
@@ -1029,13 +1032,13 @@ hr {
 
     justify-content: space-between;
     align-items: center;
-    color: var(--mobile_dark_shade);
+    color: var(--secondary_color);
 
     /* border: 2px solid red; */
   }
 
   #mobile_socials * {
-    color: var(--mobile_dark_shade);
+    color: var(--secondary_color);
   }
 
   .desktop_social{
@@ -1068,7 +1071,7 @@ hr {
 
   .sec_title {
     font-size: 1.6rem;
-    color: var(--mobile_dark_shade);
+    color: var(--secondary_color);
   }
 
   .sec_top{
@@ -1090,16 +1093,16 @@ hr {
 
   .nav_arrow {
     top: 50vh;
-    color: var(--mobile_dark_shade);
+    color: var(--secondary_color);
   }
 
 
   .nav_arrow:focus {
-    color: var(--mobile_dark_shade);
+    color: var(--secondary_color);
   }
 
   .nav_arrow:active {
-    color: var(--mobile_dark_shade);
+    color: var(--secondary_color);
   }
 
   #prj_left_arr {
@@ -1133,7 +1136,7 @@ hr {
 
   .prj_top h2 {
     font-weight: bold;
-    color: var(--mobile_dark_shade);
+    color: var(--secondary_color);
   }
 
   .prj_img {
