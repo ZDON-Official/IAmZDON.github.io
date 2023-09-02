@@ -22,7 +22,7 @@
     * ~~project page~~
     * ~~resume~~
     * **gallery page**
-      * decrease height 
+      * decrease height
   * ~~play around with 'About' page (photo on left, bio on right etc)~~
   * ~~make left bar font responsive~~
   * **MAKE Font responsive**
@@ -47,5 +47,5 @@
 * ~~dark mode toggle should change to reflect current setting when changing pages~~
   * ~~save dark mode toggle variable in local storage~~
 * fix resume page sizing on larger screen
-* desktop social buttons visible on mobile 
-* remove about page image border on mobile screens
+* ~~desktop social buttons visible on mobile~~
+* ~~remove about page image border on mobile screens~~
