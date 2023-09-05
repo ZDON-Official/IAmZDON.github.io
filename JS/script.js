@@ -151,8 +151,8 @@ darkMode_Toggle.addEventListener("click", () => {
   } else {
     // console.log("dark mode off");
 
-    document.documentElement.style.setProperty("--background_color", "#f3f7fa");
-    document.documentElement.style.setProperty("--dark_shades", "#f3f7fa");
+    document.documentElement.style.setProperty("--background_color", "white");
+    document.documentElement.style.setProperty("--dark_shades", "white");
     document.documentElement.style.setProperty("--primary_color", "#102020e7");
     document.documentElement.style.setProperty("--secondary_color", "#763a3a");
     document.documentElement.style.setProperty("--text_color", "#102020e7");
