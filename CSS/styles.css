@@ -354,6 +354,19 @@ a:hover {
   box-shadow: var(--box-shadow);
   /* border: 0.1em solid var(--secondary_color); */
 }
+
+#cta{
+  background-color: var(--secondary_color);
+  color: white;
+  outline: 2px solid var(--secondary_color);
+  transition: 0.4s;
+}
+
+#cta:is(:hover, :focus){
+  outline-offset: 4px;
+  transition: ease-in-out 0.4s;
+}
+
 /*!------------------------------------------------------------------------------- */
 
 /** All code here is for PROJECT page */
