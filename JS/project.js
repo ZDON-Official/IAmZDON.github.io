@@ -1,7 +1,7 @@
 const project_list = `[
     {
         "title" : "Audio Visualization",
-        "info"  : "This project is an audio visualizer using the P5.js framework. This was implemented by Zohiab and Rinki.",
+        "info"  : "This project is an audio visualizer using the P5.js framework. This was implemented by Zohaib and Rinki.",
         "image" : "/Assets/audio_playing.jpeg",
         "link"  : "https://github.com/ZDON-Official/Audio-Visualization"
     },
