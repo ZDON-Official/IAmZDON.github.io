@@ -49,3 +49,4 @@
 * fix resume page sizing on larger screen
 * ~~desktop social buttons visible on mobile~~
 * ~~remove about page image border on mobile screens~~
+* add a button for live demo in project sections
