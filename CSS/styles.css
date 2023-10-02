@@ -496,9 +496,19 @@ a:hover {
   /* border: 2px solid red; */
 }
 
-.prj_button {
-  top: 85%;
+.prj_btn_div{
+  top: 80%;
   position: absolute;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.prj_button {
+
   background-color: transparent;
   border: 2px solid var(--secondary_color);
   margin-bottom: 1rem;
@@ -508,6 +518,7 @@ a:hover {
   /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5); */
   /* font-size: 1em; */
   font-weight: bolder;
+  width: 150px;
 }
 
 .prj_bottom a {
@@ -526,7 +537,7 @@ a:hover {
 .prj_img {
   width: auto;
   max-width: 70%;
-  max-height: 65%;
+  max-height: 60%;
   border-radius: 0.2em;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   /* border: 2px solid gold; */
