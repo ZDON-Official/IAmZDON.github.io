@@ -435,8 +435,8 @@ a:hover {
   inset: 0;
 
   opacity: 0;
-  transition: 400ms opacity ease-in-out;
-  transition-delay: 500ms;
+  transition: 200ms opacity ease-out;
+  transition-delay: 210ms;
 
   background-color: var(--dark_shades);
   /* color: var(--main_color); */
@@ -453,7 +453,7 @@ a:hover {
 
 .projects[data-active] {
   opacity: 1;
-  transition-delay: 0ms;
+  transition-delay: 100ms;
   z-index: 1;
 }
 

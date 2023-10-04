@@ -130,7 +130,7 @@ darkMode_Toggle.addEventListener("click", () => {
     document.documentElement.style.setProperty("--secondary_color", "#bfa181");
     document.documentElement.style.setProperty(
       "--primary_color",
-      "rgba(255, 255, 255, 0.7)"
+      "rgba(255, 255, 255, 0.85)"
     );
     document.documentElement.style.setProperty(
       "--text_color",

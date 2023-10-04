@@ -50,5 +50,5 @@
 * ~~desktop social buttons visible on mobile~~
 * ~~remove about page image border on mobile screens~~
 * ~~add a button for live demo in project sections~~
-* change the gray text color in dark mode
-* Fix delay in project section navigating delay
+* ~~change the gray text color in dark mode~~
+* ~~Fix delay in project section navigating delay~~
