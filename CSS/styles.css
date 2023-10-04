@@ -435,8 +435,8 @@ a:hover {
   inset: 0;
 
   opacity: 0;
-  transition: 200ms opacity ease-in-out;
-  transition-delay: 200ms;
+  transition: 400ms opacity ease-in-out;
+  transition-delay: 500ms;
 
   background-color: var(--dark_shades);
   /* color: var(--main_color); */
