@@ -573,7 +573,7 @@ a:hover {
   margin-left: 10px;
   /* box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.75); */
   box-shadow: var(--box-shadow);
-  
+
   /* border: 2px solid red; */
 }
 
@@ -600,16 +600,12 @@ a:hover {
   font-weight: bold;
   font-size: 1.4rem;
   margin: 10px 0px;
-  /* padding: 0%; */
 }
 
 .sec_top {
   display: flex;
   justify-content: space-between;
-  font-size: 0.8em;
   color: var(--text_color);
-  /* border: 2px solid red; */
-
 }
 
 .sec_list {
@@ -618,10 +614,10 @@ a:hover {
   list-style: none;
   box-sizing: content-box;
   min-width: none;
+  max-width: 95%;
   height: auto;
   /* max-height: 10em; */
   color: var(--text_color);
-  /* border: solid; */
 }
 
 .sec_list li {
@@ -659,8 +655,6 @@ a:hover {
 
 .sec_right {
   font-weight: bold;
-  /* border: 2px solid red; */
-
 }
 
 .info_title h4 {
@@ -672,7 +666,6 @@ a:hover {
 
 hr {
   border: 1px solid var(--primary_color);
-  /* background-color: var(--secondary_color); */
 }
 
 .sub_info, .sec_bottom{
@@ -680,18 +673,14 @@ hr {
   line-height: 1rem;
 }
 
-.sub_info span{
-  font-weight: bold;
+.sec_right, .sec_left{
+  font-size: 0.8rem;
 }
 
 #qual {
   font-size: 0.8rem;
   line-height: 1.2rem;
   color: var(--text_color);
-}
-
-#qual span{
-  font-weight: bold;
 }
 
 .bold{
