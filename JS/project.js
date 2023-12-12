@@ -64,6 +64,12 @@ const project_list = `[
         "info"  : "I implemented an Etch-a-Sketch web app for The ODIN Project. This project utilizes HTML, CSS, and JavaScript.",
         "image" : "/Assets/ODIN-Etch-a-Sketch.jpeg",
         "link"  : ["https://github.com/ZDON-Official/Odin-Etch-a-Sketch", "https://zdon-official.github.io/Odin-Etch-a-Sketch/"]
+    },
+    {
+        "title" : "ODIN calculator",
+        "info"  : "I developed a calculator web app for The ODIN Project. This project utilizes HTML, CSS, and JavaScript.",
+        "image" : "/Assets/Odin-Calc.png",
+        "link"  : ["https://github.com/ZDON-Official/Odin-Calculator", "https://zdon-official.github.io/Odin-Calculator"]
     }
 ]`;
 
