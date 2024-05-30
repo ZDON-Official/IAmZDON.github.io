@@ -7,7 +7,8 @@
   --text_color: #102020e7;
   /* --secondary_color: rgb(150, 16, 16); */
   /* --secondary_color: #bfa181; */
-  --secondary_color: #763a3a;
+  /* --secondary_color: #763a3a; */
+  --secondary_color: #62449b;
   /* TODO rename this */
   /* --dark_shades: #763a3a; */
   --dark_shades: white;
@@ -558,7 +559,7 @@ a:hover {
   background-color: var(--dark_shades);
   width: 70vw;
   max-width: 70%;
-  /* height: 75vh; */
+  height: 75vh;
   max-height: 80vh;
   border-radius: 0.2em;
   box-sizing: border-box;

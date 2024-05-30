@@ -85,6 +85,7 @@ if (localStorage.getItem("dark-mode")) {
   darkMode = "light";
 }
 
+// Dark mode is toggled on
 if (localStorage.getItem("darkMode_toggle")) {
   console.log("dark mode is on");
   darkMode_on = JSON.parse(localStorage.getItem("darkMode_toggle"));
