@@ -73,22 +73,40 @@ date.innerText = cur_year;
 //! THIS CODE IS FOR DARK MODE ACROSS THE DIFFERENT PAGES
 //* =================================================================================================
 
+//* -------------------------------------------------------------------------------------------------
+//! Const variable for theme colors
 const secondary_color_dark = "#bfa181";
 const secondary_color_light = "#62449b";
+
+const text_color_light = "#102020e7";
+const text_color_dark = "rgba(255, 255, 255, 0.7)";
+
+const primary_color_light = "#102020e7";
+const primary_color_dark = "rgba(255, 255, 255, 0.7)";
+
+const dark_shades_light = "white";
+const dark_shades_dark = "transparent";
+
+const background_color_light = "white";
+const background_color_dark = "#182230";
+
+//* -------------------------------------------------------------------------------------------------
 
 const darkMode_Toggle = document.getElementById("dark_mode_toggle");
 var mobile_screen = window.matchMedia("(max-width: 767px)");
 var darkMode_on;
-var darkMode; // <------ Save this in local storage too
+var darkMode; // TODO <------ Save this in local storage too
 
+//? Needed?
+// TODO - remove if dead code
 if (localStorage.getItem("dark-mode")) {
-  // if dark mode is in storage, set variable with that value
-  darkMode = localStorage.getItem("dark-mode");
+  //! if dark mode is in storage, set variable with that value
+  // darkMode = localStorage.getItem("dark-mode");
 } else {
-  darkMode = "light-mode";
+  // darkMode = "light-mode";
 }
 
-// check if DARK MODE is toggled on
+//! check if DARK MODE is toggled on
 if (localStorage.getItem("darkMode_toggle")) {
   console.log("dark mode is on");
   darkMode_on = JSON.parse(localStorage.getItem("darkMode_toggle"));
@@ -97,17 +115,17 @@ if (localStorage.getItem("darkMode_toggle")) {
   darkMode_on = false;
 }
 
-localStorage.setItem("dark-mode", darkMode);
+// localStorage.setItem("dark-mode", darkMode);
 localStorage.setItem("darkMode-toggle", darkMode_on);
 
-// if dark mode is already toggled on when a new page is loaded
+//! if dark mode is already toggled on when a new page is loaded
 if (localStorage.getItem("dark-mode") == "dark") {
   turn_dark_mode_on();
 }
 
-// Toggle dark Mode UI
+//! Toggle dark Mode UI
 darkMode_Toggle.addEventListener("click", () => {
-  console.log("Dark mode button clicked");
+  console.log("Theme switch button clicked");
 
   if (darkMode_on === false) {
     console.log("dark mode turned on");
@@ -117,35 +135,28 @@ darkMode_Toggle.addEventListener("click", () => {
 
     // console.log(darkMode_Toggle.classList);
 
-    // if (mobile_screen.matches) {
-    //   document.documentElement.style.setProperty("--text_color", "#e9eef1");
-    // }
-
-    localStorage.setItem("dark-mode", "dark");
+    //! update the local storage
+    // localStorage.setItem("dark-mode", "dark");
     localStorage.setItem("darkMode_toggle", darkMode_on);
   } else {
     console.log("Light mode on");
 
     turn_light_mode_on();
 
-    // if (mobile_screen.matches) {
-    //   document.documentElement.style.setProperty("--text_color", "#102020e7");
-    // }
-
     darkMode_on = false;
 
-    localStorage.setItem("dark-mode", "light");
+    // localStorage.setItem("dark-mode", "light");
     localStorage.setItem("darkMode_toggle", darkMode_on);
   }
-
-  console.log(darkMode_on);
-  console.log(`toggle is ${JSON.parse(darkMode_on)}`);
 });
 
-// Toggles dark mode on
+//! Toggles dark mode on
 function turn_dark_mode_on() {
-  document.documentElement.style.setProperty("--background_color", "#182230");
-  document.documentElement.style.setProperty("--dark_shades", "transparent");
+  document.documentElement.style.setProperty(
+    "--background_color",
+    background_color_dark
+  );
+  document.documentElement.style.setProperty("--dark_shades", dark_shades_dark);
   document.documentElement.style.setProperty(
     "--secondary_color",
     secondary_color_dark
@@ -154,23 +165,30 @@ function turn_dark_mode_on() {
     "--primary_color",
     "rgba(255, 255, 255, 0.7)"
   );
-  document.documentElement.style.setProperty(
-    "--text_color",
-    "rgba(255, 255, 255, 0.7)"
-  );
+  document.documentElement.style.setProperty("--text_color", text_color_dark);
   darkMode_Toggle.classList.remove("fa-sun");
   darkMode_Toggle.classList.add("fa-moon");
 }
 
+//! Toggles light mode on
 function turn_light_mode_on() {
-  document.documentElement.style.setProperty("--background_color", "white");
-  document.documentElement.style.setProperty("--dark_shades", "white");
-  document.documentElement.style.setProperty("--primary_color", "#102020e7");
+  document.documentElement.style.setProperty(
+    "--background_color",
+    background_color_light
+  );
+  document.documentElement.style.setProperty(
+    "--dark_shades",
+    dark_shades_light
+  );
+  document.documentElement.style.setProperty(
+    "--primary_color",
+    primary_color_light
+  );
   document.documentElement.style.setProperty(
     "--secondary_color",
     secondary_color_light
   );
-  document.documentElement.style.setProperty("--text_color", "#102020e7");
+  document.documentElement.style.setProperty("--text_color", text_color_light);
 
   darkMode_Toggle.classList.remove("fa-moon");
   darkMode_Toggle.classList.add("fa-sun");
