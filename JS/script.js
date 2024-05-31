@@ -73,6 +73,9 @@ date.innerText = cur_year;
 //! THIS CODE IS FOR DARK MODE ACROSS THE DIFFERENT PAGES
 //* =================================================================================================
 
+const secondary_color_dark = "#bfa181";
+const secondary_color_light = "#62449b";
+
 const darkMode_Toggle = document.getElementById("dark_mode_toggle");
 var mobile_screen = window.matchMedia("(max-width: 767px)");
 var darkMode_on;
@@ -82,10 +85,10 @@ if (localStorage.getItem("dark-mode")) {
   // if dark mode is in storage, set variable with that value
   darkMode = localStorage.getItem("dark-mode");
 } else {
-  darkMode = "light";
+  darkMode = "light-mode";
 }
 
-// Dark mode is toggled on
+// check if DARK MODE is toggled on
 if (localStorage.getItem("darkMode_toggle")) {
   console.log("dark mode is on");
   darkMode_on = JSON.parse(localStorage.getItem("darkMode_toggle"));
@@ -97,51 +100,22 @@ if (localStorage.getItem("darkMode_toggle")) {
 localStorage.setItem("dark-mode", darkMode);
 localStorage.setItem("darkMode-toggle", darkMode_on);
 
+// if dark mode is already toggled on when a new page is loaded
 if (localStorage.getItem("dark-mode") == "dark") {
-  document.documentElement.style.setProperty("--background_color", "#182230");
-  document.documentElement.style.setProperty("--dark_shades", "transparent");
-  document.documentElement.style.setProperty("--secondary_color", "#bfa181");
-  document.documentElement.style.setProperty(
-    "--primary_color",
-    "rgba(255, 255, 255, 0.7)"
-  );
-  document.documentElement.style.setProperty(
-    "--text_color",
-    "rgba(255, 255, 255, 0.7)"
-  );
-  darkMode_Toggle.classList.remove("fa-sun");
-  darkMode_Toggle.classList.add("fa-moon");
-
-  // if (mobile_screen.matches) {
-  //   document.documentElement.style.setProperty("--text_color", "rgba(255, 255, 255, 0.7)");
-  // }
+  turn_dark_mode_on();
 }
 
-// Toggle dark UI
-
+// Toggle dark Mode UI
 darkMode_Toggle.addEventListener("click", () => {
   console.log("Dark mode button clicked");
 
   if (darkMode_on === false) {
-    console.log("dark mode on");
+    console.log("dark mode turned on");
     darkMode_on = true;
 
-    document.documentElement.style.setProperty("--background_color", "#182230");
-    document.documentElement.style.setProperty("--dark_shades", "transparent");
-    document.documentElement.style.setProperty("--secondary_color", "#bfa181");
-    document.documentElement.style.setProperty(
-      "--primary_color",
-      "rgba(255, 255, 255, 0.85)"
-    );
-    document.documentElement.style.setProperty(
-      "--text_color",
-      "rgba(255, 255, 255, 0.7)"
-    );
+    turn_dark_mode_on();
 
-    darkMode_Toggle.classList.remove("fa-sun");
-    darkMode_Toggle.classList.add("fa-moon");
-
-    console.log(darkMode_Toggle.classList);
+    // console.log(darkMode_Toggle.classList);
 
     // if (mobile_screen.matches) {
     //   document.documentElement.style.setProperty("--text_color", "#e9eef1");
@@ -150,16 +124,9 @@ darkMode_Toggle.addEventListener("click", () => {
     localStorage.setItem("dark-mode", "dark");
     localStorage.setItem("darkMode_toggle", darkMode_on);
   } else {
-    // console.log("dark mode off");
+    console.log("Light mode on");
 
-    document.documentElement.style.setProperty("--background_color", "white");
-    document.documentElement.style.setProperty("--dark_shades", "white");
-    document.documentElement.style.setProperty("--primary_color", "#102020e7");
-    document.documentElement.style.setProperty("--secondary_color", "#763a3a");
-    document.documentElement.style.setProperty("--text_color", "#102020e7");
-
-    darkMode_Toggle.classList.remove("fa-moon");
-    darkMode_Toggle.classList.add("fa-sun");
+    turn_light_mode_on();
 
     // if (mobile_screen.matches) {
     //   document.documentElement.style.setProperty("--text_color", "#102020e7");
@@ -174,3 +141,37 @@ darkMode_Toggle.addEventListener("click", () => {
   console.log(darkMode_on);
   console.log(`toggle is ${JSON.parse(darkMode_on)}`);
 });
+
+// Toggles dark mode on
+function turn_dark_mode_on() {
+  document.documentElement.style.setProperty("--background_color", "#182230");
+  document.documentElement.style.setProperty("--dark_shades", "transparent");
+  document.documentElement.style.setProperty(
+    "--secondary_color",
+    secondary_color_dark
+  );
+  document.documentElement.style.setProperty(
+    "--primary_color",
+    "rgba(255, 255, 255, 0.7)"
+  );
+  document.documentElement.style.setProperty(
+    "--text_color",
+    "rgba(255, 255, 255, 0.7)"
+  );
+  darkMode_Toggle.classList.remove("fa-sun");
+  darkMode_Toggle.classList.add("fa-moon");
+}
+
+function turn_light_mode_on() {
+  document.documentElement.style.setProperty("--background_color", "white");
+  document.documentElement.style.setProperty("--dark_shades", "white");
+  document.documentElement.style.setProperty("--primary_color", "#102020e7");
+  document.documentElement.style.setProperty(
+    "--secondary_color",
+    secondary_color_light
+  );
+  document.documentElement.style.setProperty("--text_color", "#102020e7");
+
+  darkMode_Toggle.classList.remove("fa-moon");
+  darkMode_Toggle.classList.add("fa-sun");
+}
